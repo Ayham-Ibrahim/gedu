@@ -21,7 +21,9 @@ class OpenRouterService
         $this->maxTokens   = (int) config('services.openrouter.max_tokens', 1024);
         $this->temperature = (float) config('services.openrouter.temperature', 0.3);
 
-        $this->client = new Client(['timeout' => 60]);
+        // Stay well under PHP's 60s max_execution_time so a slow/unreachable
+        // provider returns a friendly error instead of a fatal timeout.
+        $this->client = new Client(['timeout' => 45, 'connect_timeout' => 10]);
     }
 
     // ─── Main Entry Point ──────────────────────────────────────────────────────
@@ -157,10 +159,14 @@ CONTENT;
     public function healthCheck(): array
     {
         try {
+            // Short timeouts: the health endpoint must answer fast even when
+            // the network is flaky.
             $this->client->get('https://openrouter.ai/api/v1/models', [
                 'headers' => [
                     'Authorization' => "Bearer {$this->apiKey}",
                 ],
+                'timeout'         => 5,
+                'connect_timeout' => 3,
             ]);
 
             return [

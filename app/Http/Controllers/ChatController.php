@@ -8,6 +8,7 @@ use App\Services\QdrantService;
 use App\Services\BroadQueryDetector;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Validator;
 
@@ -153,17 +154,30 @@ class ChatController extends Controller
      */
     public function health(): JsonResponse
     {
-        $qdrantStatus     = $this->qdrant->healthCheck();
-        $openrouterStatus = $this->openrouter->healthCheck();
+        $qdrantStatus = $this->qdrant->healthCheck();
 
-        $allOk = $qdrantStatus['status'] === 'connected' && $openrouterStatus['status'] === 'ok';
+        // OpenRouter is a remote API: cache its status briefly so every widget
+        // open doesn't make an outbound call, and only cache successes so an
+        // outage is re-checked on the next request.
+        $openrouterStatus = Cache::get('health:openrouter');
+        if ($openrouterStatus === null) {
+            $openrouterStatus = $this->openrouter->healthCheck();
+            if ($openrouterStatus['status'] === 'ok') {
+                Cache::put('health:openrouter', $openrouterStatus, now()->addSeconds(60));
+            }
+        }
 
+        $qdrantOk     = $qdrantStatus['status'] === 'connected';
+        $openrouterOk = $openrouterStatus['status'] === 'ok';
+
+        // 503 only when the local knowledge base is down; a transient
+        // OpenRouter hiccup is reported as "degraded" but still 200.
         return response()->json([
-            'status'            => $allOk ? 'ok' : 'degraded',
+            'status'            => $qdrantOk && $openrouterOk ? 'ok' : 'degraded',
             'qdrant'            => $qdrantStatus['status'],
             'openrouter'        => $openrouterStatus['status'],
-            'knowledge_points'  => $this->qdrant->getPointCount(),
+            'knowledge_points'  => $qdrantOk ? $this->qdrant->getPointCount() : 0,
             'timestamp'         => now()->toISOString(),
-        ], $allOk ? 200 : 503);
+        ], $qdrantOk ? 200 : 503);
     }
 }
