@@ -24,7 +24,7 @@ return [
         'model'           => env('GEMINI_MODEL', 'gemini-2.5-flash-lite'),
         'max_tokens'      => env('GEMINI_MAX_TOKENS', 1024),
         'temperature'     => env('GEMINI_TEMPERATURE', 0.3),
-        'embedding_model' => env('GEMINI_EMBEDDING_MODEL', 'models/text-embedding-004'),
+        'embedding_model' => env('GEMINI_EMBEDDING_MODEL', 'models/gemini-embedding-001'),
     ],
     'deepseek' => [
         'api_key'     => env('DEEPSEEK_API_KEY'),
@@ -55,7 +55,7 @@ return [
     |--------------------------------------------------------------------------
     | Options: 'gemini' | 'openai'
     | Make sure the vector dimension matches your Qdrant collection!
-    |   gemini  → 768 dimensions
+    |   gemini  → 3072 dimensions (gemini-embedding-001)
     |   openai  → 1536 dimensions
     */
     'embedding' => [

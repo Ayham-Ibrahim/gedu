@@ -19,6 +19,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
  * @property string $name_ar
  * @property string $country
  * @property string $city
+ * @property string $tuition
  * @property string $website
  * @property string $description
  * @property string $admission_requirements
@@ -31,10 +32,12 @@ class University extends Model
     use HasFactory;
 
     protected $fillable = [
+        'external_id',
         'name',
         'name_ar',
         'country',
         'city',
+        'tuition',
         'website',
         'description',
         'admission_requirements',

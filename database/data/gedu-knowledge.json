@@ -1,0 +1,1153 @@
+{
+  "schema": 1,
+  "source": "gedu-frontend",
+  "generated_at": "2026-10-01T10:01:21.669Z",
+  "countries": [
+    {
+      "key": "egypt",
+      "name": {
+        "ar": "مصر",
+        "en": "Egypt"
+      },
+      "visa": {
+        "type": "تأشيرة دراسة لجمهورية مصر العربية",
+        "application_form": "https://mfa.gov.eg/",
+        "requirements": [
+          "القبول الجامعي الرسمي المعتمد من قبل وزارة التعليم العالي المصرية (إدارة الوافدين)",
+          "جواز سفر أصلي ساري المفعول لمدة لا تقل عن 6 أشهر متتالية",
+          "كشف حساب مالي أو إثبات الكفالة والمقدرة المالية لتغطية تكاليف الإقامة والمعيشة بمصر",
+          "شهادة الفحص الطبي المعتمدة للخلو من الأمراض المعدية الكبرى",
+          "صور مصدقة وموثقة من المؤهلات الأكاديمية والشهادات الدراسية السابقة",
+          "تعبئة استمارة طلب الحصول على الفيزا ودفع الرسوم المقررة بالسفارة"
+        ],
+        "embassies": [
+          {
+            "name": "سفارة جمهورية مصر العربية – أبوظبي",
+            "phone": "+971 2 444 5555",
+            "email": "embassy.abudhabi@mfa.gov.eg",
+            "address": "منطقة السفارات – شارع المرور – أبوظبي – الإمارات"
+          }
+        ]
+      },
+      "living_cost": {
+        "housing_shared_room": "150 - 300 $ / شهر",
+        "housing_student_residence": "100 - 250 $ / شهر",
+        "food_grocery_home_cooking": "100 - 200 $ / شهر",
+        "economic_restaurant_meal": "3 - 7 $",
+        "transport_monthly_pass": "15 - 30 $",
+        "bills_internet_phone": "20 - 45 $ / شهر"
+      },
+      "universities": [
+        {
+          "external_id": "study:eg1",
+          "name": "Cairo University",
+          "name_ar": "جامعة القاهرة",
+          "city": "Giza / Cairo",
+          "tuition": "$3,000 - $6,000 / Year",
+          "programs": [
+            "Computer Science & AI",
+            "Medicine & Surgery (MD)",
+            "Mechanical Engineering",
+            "Pharmacy & Clinical Pharmacy",
+            "Business Administration",
+            "Economics & Political Science"
+          ]
+        },
+        {
+          "external_id": "study:eg2",
+          "name": "The American University in Cairo",
+          "name_ar": "الجامعة الأمريكية بالقاهرة",
+          "city": "New Cairo",
+          "tuition": "$12,000 - $18,000 / Year",
+          "programs": [
+            "Global MBA",
+            "Computer Science",
+            "Graphic Design",
+            "Mechanical Engineering",
+            "Integrated Marketing Communications",
+            "Political Science & International Relations"
+          ]
+        },
+        {
+          "external_id": "study:eg3",
+          "name": "Ain Shams University",
+          "name_ar": "جامعة عين شمس",
+          "city": "Cairo",
+          "tuition": "$2,500 - $5,000 / Year",
+          "programs": [
+            "Civil & Infrastructure Engineering",
+            "Dentistry & Oral Health (DDS)",
+            "Information Systems & Data Science",
+            "Architectural Engineering",
+            "Software Engineering",
+            "Accounting & Finance"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "usa",
+      "name": {
+        "ar": "الولايات المتحدة الأمريكية",
+        "en": "United States"
+      },
+      "visa": {
+        "type": "تأشيرة طالب F-1 للولايات المتحدة",
+        "application_form": "https://ceac.state.gov/genniv/",
+        "requirements": [
+          "الحصول على نموذج I-20 الدراسي المعتمد والصادر رسمياً من الجامعة الشريكة",
+          "دفع رسوم نظام SEVIS بالكامل والحصول على إيصال دفع I-901 الصادر من دائرة الهجرة",
+          "تعبئة نموذج طلب تأشيرة غير المهاجرين DS-160 بالكامل وتأكيده أونلاين",
+          "تحديد موعد المقابلة الشخصية في السفارة في أبوظبي أو القنصلية في دبي",
+          "تقديم إثبات مالي قوي وموثق (كشف حساب كفيل أو تمويل شخصي أو منحة معتمدة)",
+          "تقديم إثبات بنية مغادرة الولايات المتحدة والروابط القوية التي تحفز العودة للوطن"
+        ],
+        "embassies": [
+          {
+            "name": "سفارة الولايات المتحدة الأمريكية – أبوظبي",
+            "phone": "+971 2 414 2200",
+            "email": "abudhabiacs@state.gov",
+            "address": "طريق المطار – منطقة السفارات – قطعة 38 – قطاع W59-02 – أبوظبي – الإمارات"
+          },
+          {
+            "name": "القنصلية العامة للولايات المتحدة الأمريكية – دبي",
+            "phone": "+971 4 309 4000",
+            "email": "DubaiACS@state.gov",
+            "address": "تقاطع شارع السيف وشارع الشيخ خليفة بن زايد – دبي – الإمارات"
+          }
+        ]
+      },
+      "living_cost": {
+        "university_dormitory": "800 - 1500 $ / شهر",
+        "shared_apartment": "700 - 1800 $ / شهر",
+        "food_groceries": "300 - 600 $ / شهر",
+        "economic_restaurant_meal": "12 - 22 $",
+        "transport_monthly_pass": "70 - 150 $",
+        "bills_internet_phone": "100 - 250 $ / شهر"
+      },
+      "universities": [
+        {
+          "external_id": "study:us1",
+          "name": "Potomac University",
+          "name_ar": "جامعة بوتوماك",
+          "city": "Washington, D.C.",
+          "tuition": "$12,000 - $15,000 / Year",
+          "programs": [
+            "Bachelor of Science in Computer Science",
+            "Master of Business Administration (MBA)",
+            "Cybersecurity & Information Assurance",
+            "International Business Administration",
+            "Information Technology Management"
+          ]
+        },
+        {
+          "external_id": "study:us2",
+          "name": "University of West Alabama",
+          "name_ar": "جامعة ويست ألاباما",
+          "city": "Livingston, Alabama",
+          "tuition": "$10,000 - $14,000 / Year",
+          "programs": [
+            "Bachelor of Business Administration",
+            "Master of Science in Experimental Psychology",
+            "Integrated Marketing Communications",
+            "Biology and Environmental Sciences",
+            "Sport Management & Athletics"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "canada",
+      "name": {
+        "ar": "كندا",
+        "en": "Canada"
+      },
+      "visa": {
+        "type": "تصريح الدراسة الكندي (Study Permit)",
+        "application_form": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada.html",
+        "requirements": [
+          "خطاب القبول الجامعي الرسمي (Letter of Acceptance) من مؤسسة تعليمية كندية معتمدة (DLI)",
+          "إثبات المقدرة المالية الكافية لدفع الرسوم وتغطية معيشة الطالب عائلته إن وُجدت",
+          "شهادة خلو من السوابق الجنائية (فيش وتشبيه) مصدق ومترجم أصولاً",
+          "تجاوز الفحص الطبي المعتمد لدى أحد الأطباء المعتمدين من السفارة الكندية",
+          "تقديم خطاب توضيحي لهدف الدراسة (Statement of Purpose / Study Plan)",
+          "دفع رسوم معالجة التأشيرة والتقاط البصمات الحيوية (Biometrics)"
+        ],
+        "embassies": [
+          {
+            "name": "سفارة كندا – أبوظبي",
+            "phone": "+971 2 694 0300",
+            "address": "برج بينونة، شارع الكورنيش، أبوظبي، الإمارات العربية المتحدة"
+          }
+        ]
+      },
+      "living_cost": {
+        "shared_room_or_apartment": "600 - 1200 CAD / شهر",
+        "university_residence": "700 - 1500 CAD / شهر",
+        "food_and_groceries": "300 - 500 CAD / شهر",
+        "economic_restaurant_meal": "15 - 25 CAD",
+        "transport_monthly_pass": "80 - 130 CAD",
+        "bills_internet_phone": "90 - 180 CAD / شهر"
+      },
+      "universities": [
+        {
+          "external_id": "study:ca1",
+          "name": "University of Toronto",
+          "name_ar": "جامعة تورنتو",
+          "city": "Toronto, Ontario",
+          "tuition": "$35,000 - $55,000 / Year",
+          "programs": [
+            "Computer Science & Advanced Programming",
+            "Master of Business Administration (Rotman MBA)",
+            "Electrical & Computer Engineering",
+            "Biotechnology & Health Sciences",
+            "Data Science & Statistical Analysis"
+          ]
+        },
+        {
+          "external_id": "study:ca2",
+          "name": "McGill University",
+          "name_ar": "جامعة ماكغيل",
+          "city": "Montreal, Quebec",
+          "tuition": "$30,000 - $48,000 / Year",
+          "programs": [
+            "Mechanical & Aerospace Engineering",
+            "Clinical Psychology & Neuroscience",
+            "Commerce & Global Finance",
+            "Software Engineering",
+            "Economics and Strategic Management"
+          ]
+        },
+        {
+          "external_id": "study:ca3",
+          "name": "University of British Columbia",
+          "name_ar": "جامعة كولومبيا البريطانية",
+          "city": "Vancouver, BC",
+          "tuition": "$32,000 - $45,000 / Year",
+          "programs": [
+            "Civil & Environmental Engineering",
+            "Environmental Sciences",
+            "Business Administration (Sauder BBA)",
+            "International Relations & Public Policy",
+            "Computer Science & Machine Learning"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "mexico",
+      "name": {
+        "ar": "المكسيك",
+        "en": "Mexico"
+      },
+      "visa": {
+        "type": "تأشيرة طالب مكسيكية للإقامة المؤقتة",
+        "application_form": "https://embamex.sre.gob.mx/emiratos/",
+        "requirements": [
+          "خطاب القبول الجامعي الأصلي والموثق رسمياً الصادر عن جامعة أزتيكا",
+          "جواز سفر ساري المفعول لمدة لا تقل عن ستة أشهر مع صور ملونة",
+          "كشف حساب بنكي لآخر 3 أشهر يثبت الاستقرار والملاءة المالية الكافية للفرد أو الضامن",
+          "صورتين شخصيتين بيومتريتين حديثتين بخلفية بيضاء وبدون إكسسوارات",
+          "دفع رسوم معالجة ملف التأشيرة المقررة وتجاوز المقابلة الشخصية وجهاً لوجه بالسفارة"
+        ],
+        "embassies": [
+          {
+            "name": "سفارة المكسيك – أبوظبي",
+            "phone": "+971 2 511 9900",
+            "email": "consularemiau@sre.gob.mx",
+            "address": "منطقة السفارات، شارع الكرامة، فيلا رقم 38، أبوظبي، الإمارات"
+          }
+        ]
+      },
+      "living_cost": {
+        "housing_shared_apartment": "200 - 350 $ / شهر",
+        "housing_private_studio": "300 - 600 $ / شهر",
+        "food_groceries": "150 - 250 $ / شهر",
+        "economic_restaurant_meal": "5 - 10 $",
+        "transport_monthly_pass": "15 - 30 $",
+        "bills_internet_phone": "30 - 60 $ / شهر"
+      },
+      "universities": [
+        {
+          "external_id": "study:mx1",
+          "name": "Universidad Azteca",
+          "name_ar": "جامعة أزتيكا",
+          "city": "Chalco, State of Mexico",
+          "tuition": "$4,000 - $7,000 / Year",
+          "programs": [
+            "Bachelor of Business Administration (BBA)",
+            "Executive Master of Business Administration (EMBA)",
+            "Doctor of Business Administration (DBA)",
+            "Information Technology Management",
+            "International Law & Human Rights",
+            "Educational Sciences & Leadership"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "south_africa",
+      "name": {
+        "ar": "جمهورية جنوب أفريقيا",
+        "en": "South Africa"
+      },
+      "visa": {
+        "type": "تأشيرة دراسة لجمهورية جنوب أفريقيا",
+        "application_form": "https://www.dha.gov.za/",
+        "requirements": [
+          "خطاب قبول رسمي صادر من المؤسسة الأكاديمية أو الجامعة المعتمدة بجنوب أفريقيا",
+          "تقرير طبي رسمي شامل وفحص إشعاعي للصدر للخلو التام من مرض السل الرئوي",
+          "إثبات الملاءة المالية لتغطية تكاليف الإقامة السنوية ورسوم الجامعة بكشوفات بنكية معتمدة",
+          "شهادة خلو سوابق عدلية (لا حكم عليه) من بلد الإقامة الرسمي لآخر 12 شهر",
+          "تأمين طبي دولي معتمد يغطي كامل الإقامة في جنوب أفريقيا للرعاية العاجلة والطارئة",
+          "حجز طائرة مؤكد لرحلتي الذهاب والعودة أو تقديم ضمان نقدي كوديعة عودة"
+        ],
+        "embassies": [
+          {
+            "name": "سفارة جمهورية جنوب أفريقيا – أبوظبي",
+            "phone": "+971 2 417 6400",
+            "email": "consular.abudhabi@dirco.gov.za",
+            "address": "شارع بينونة، منطقة البطين، ص.ب 29447، أبوظبي، الإمارات"
+          }
+        ]
+      },
+      "living_cost": {
+        "housing_shared_apartment": "250 - 450 $ / شهر",
+        "university_residence": "200 - 400 $ / شهر",
+        "food_groceries": "150 - 300 $ / شهر",
+        "economic_restaurant_meal": "7 - 12 $",
+        "transport_monthly_pass": "30 - 60 $",
+        "bills_internet_phone": "40 - 80 $ / شهر"
+      },
+      "universities": [
+        {
+          "external_id": "study:za1",
+          "name": "Benin University",
+          "name_ar": "جامعة بينين - برنامج جنوب أفريقيا المعتمد",
+          "city": "Western Cape / Pretoria",
+          "tuition": "$2,000 - $4,500 / Year",
+          "programs": [
+            "Bachelor of Business Administration",
+            "Public Health & Epidemiology",
+            "Information Technology Services",
+            "Community Development Studies",
+            "Environmental Protection & Eco-Systems",
+            "Business Management & Leadership"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "georgia",
+      "name": {
+        "ar": "جورجيا",
+        "en": "Georgia"
+      },
+      "visa": {
+        "type": "تأشيرة دراسة وطنية لجورجيا (D3 Visa)",
+        "application_form": "https://geoconsul.gov.ge/",
+        "requirements": [
+          "خطاب القبول الجامعي الرسمي مصدق من وزارة التربية والعلوم الجورجية ونظام التسجيل الوطني",
+          "جواز سفر ساري المفعول للفترة الأكاديمية كاملة مع صور ملونة عالية الجودة",
+          "كشف حساب بنكي رسمي معتمد يثبت المقدرة المالية والدعم الكافي للمعيشة بجورجيا",
+          "تأمين طبي شامل ضد الأمراض والحوادث سارٍ في جورجيا لكامل فترة الإقامة",
+          "ترجمة كافة الأوراق والمستندات الأكاديمية السابقة للغة الجورجية أو الإنجليزية بشكل معتمد مصدق"
+        ],
+        "embassies": [
+          {
+            "name": "سفارة جورجيا – أبوظبي",
+            "phone": "+971 2 644 6023",
+            "email": "abudhabi.emb@mfa.gov.ge",
+            "address": "شارع الفلاح، منطقة المرور، فيلا جورجيا، أبوظبي، الإمارات"
+          }
+        ]
+      },
+      "living_cost": {
+        "shared_flat": "200 - 400 $ / شهر",
+        "private_apartment": "350 - 700 $ / شهر",
+        "food_groceries": "100 - 200 $ / شهر",
+        "economic_restaurant_meal": "6 - 11 $",
+        "transport_monthly_pass": "10 - 20 $",
+        "bills_internet_phone": "25 - 50 $ / شهر"
+      },
+      "universities": [
+        {
+          "external_id": "study:ge1",
+          "name": "Tbilisi State Medical University",
+          "name_ar": "جامعة تبليسي الطبية الحكومية",
+          "city": "Tbilisi",
+          "tuition": "$5,000 - $8,000 / Year",
+          "programs": [
+            "Doctor of Medicine (MD) - Certified English Program",
+            "Doctor of Dental Medicine (DMD)",
+            "Bachelor of Pharmacy",
+            "Physical Medicine and Rehabilitation"
+          ]
+        },
+        {
+          "external_id": "study:ge2",
+          "name": "Caucasus University",
+          "name_ar": "جامعة القوقاز",
+          "city": "Tbilisi",
+          "tuition": "$4,000 - $6,500 / Year",
+          "programs": [
+            "Information Technology & Computer Science",
+            "Bachelor of Business Administration (BBA)",
+            "Cybersecurity & Networks Engineering",
+            "International Relations and Diplomacy",
+            "Tourism & Hospitality Management"
+          ]
+        },
+        {
+          "external_id": "study:ge3",
+          "name": "Georgian Technical University",
+          "name_ar": "الجامعة التقنية الجورجية",
+          "city": "Tbilisi",
+          "tuition": "$3,550 - $5,000 / Year",
+          "programs": [
+            "Civil Engineering & Infrastructure",
+            "Software Engineering",
+            "Architecture and Town Planning",
+            "Electrical Power Engineering",
+            "Industrial Automation & Control Systems"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "china",
+      "name": {
+        "ar": "الصين",
+        "en": "China"
+      },
+      "visa": {
+        "type": "تأشيرة طالب صينية طويلة المدى (X1 Visa)",
+        "application_form": "http://ae.china-embassy.gov.cn/eng/",
+        "requirements": [
+          "استلام نموذج JW202 أو JW201 المخصص لتقديم طلبات تأشيرات دراسة الوافدين",
+          "خطاب القبول النهائي المصدق والصادر من جهة الجامعة الصينية المعتمدة",
+          "شهادة الفحص الطبي الصيني الشامل للوافدين (Foreigner Physical Examination Form)",
+          "كشف حساب مالي يدعم تغطية نفقات سنة دراسية وعام معيشي كامل على الأقل",
+          "جواز كاتب ساري المفعول والشهادات العلمية والعملية السابقة مصدقة ومترجمة"
+        ],
+        "embassies": [
+          {
+            "name": "سفارة جمهورية الصين الشعبية – أبوظبي",
+            "phone": "+971 2 443 4276",
+            "email": "chinaemb_ae@mfa.gov.cn",
+            "address": "شارع السعادة، منطقة السفارات، ص.ب 2741، أبوظبي، الإمارات"
+          }
+        ]
+      },
+      "living_cost": {
+        "shared_room": "150 - 300 $ / شهر",
+        "student_dormitory_on_campus": "100 - 250 $ / شهر",
+        "food_on_campus": "100 - 180 $ / شهر",
+        "economic_restaurant_meal": "3 - 7 $",
+        "subway_transportation_monthly": "15 - 35 $",
+        "bills_internet_phone": "15 - 30 $ / شهر"
+      },
+      "universities": [
+        {
+          "external_id": "study:cn1",
+          "name": "Tsinghua University",
+          "name_ar": "جامعة تسينغهوا",
+          "city": "Beijing",
+          "tuition": "$6,500 - $9,500 / Year",
+          "programs": [
+            "Global Business Administration",
+            "Advanced Computer Science",
+            "Engineering & Technology Management",
+            "Artificial Intelligence & Software Engineering",
+            "Structural & Civil Engineering"
+          ]
+        },
+        {
+          "external_id": "study:cn2",
+          "name": "Peking University",
+          "name_ar": "جامعة بكين",
+          "city": "Beijing",
+          "tuition": "$6,000 - $9,000 / Year",
+          "programs": [
+            "International Relations & Public Policy",
+            "Computer Science & Advanced Software Development",
+            "Global MBA (Guanghua MBA)",
+            "Chinese Language, History & Culture Studies",
+            "International Economics and Finance"
+          ]
+        },
+        {
+          "external_id": "study:cn3",
+          "name": "Fudan University",
+          "name_ar": "جامعة فودان",
+          "city": "Shanghai",
+          "tuition": "$5,500 - $8,200 / Year",
+          "programs": [
+            "International Finance & Economics",
+            "Data Science & Statistical Modeling",
+            "MBBS (Medical Studies in English)",
+            "Strategic Marketing & Management Science",
+            "Advanced Chemistry and Material Science"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "uae",
+      "name": {
+        "ar": "الإمارات العربية المتحدة",
+        "en": "United Arab Emirates"
+      },
+      "visa": {
+        "type": "تأشيرة وإقامة طالب داخل دولة الإمارات",
+        "application_form": "https://smart.gdrfad.gov.ae/",
+        "requirements": [
+          "خطاب قبول نهائي غير مشروط وصادر من إحدى المؤسسات الجامعية المرخصة والمعتمدة بالدولة",
+          "جواز سفر للطالب ساري الصلاحية لمدة تجاوز 6 أشهر مع صور حديثة ومصدقة",
+          "خضوع الطالب لفحص اللياقة الطبية الشامل لدى أحد المراكز الصحية المعتمدة للياقة",
+          "تقديم نسخة من وثيقة أو كفالة بنكية صادرة من الجامعة أو الضامن المالي المعتمد",
+          "تأمين صحي شامل ومتكامل ساري المفعول في دولة الإمارات العربية المتحدة",
+          "تعبئة طلب إصدار سري للهوية الإمارتية وتنشيط ملف الإقامة للطالب رسمياً"
+        ],
+        "embassies": [
+          {
+            "name": "الهيئة الاتحادية للهوية والجنسية والجمارك وأمن المنافذ – أبوظبي",
+            "phone": "+971 2 403 0000",
+            "address": "شارع المرور – الهيئة الاتحادية لقنوات الخدمة، أبوظبي، الإمارات"
+          }
+        ]
+      },
+      "living_cost": {
+        "shared_apartment": "1500 - 3000 AED / شهر",
+        "student_hostel_dormitory": "1000 - 2500 AED / شهر",
+        "food_and_grocery": "800 - 1500 AED / شهر",
+        "economic_restaurant_meal": "25 - 45 AED",
+        "transport_monthly_pass_card": "150 - 300 AED",
+        "bills_internet_phone": "250 - 500 AED / شهر"
+      },
+      "universities": [
+        {
+          "external_id": "study:ae1",
+          "name": "United Arab Emirates University",
+          "name_ar": "جامعة الإمارات العربية المتحدة",
+          "city": "Al Ain",
+          "tuition": "AED 35,000 - 55,000 / Year",
+          "programs": [
+            "Mechanical Engineering & Robotic Automation",
+            "Computer Science & Systems Security",
+            "Doctor of Medicine & Health Sciences (MD)",
+            "Business Administration & Global Entrepreneurship",
+            "Accounting, Auditing & Financial Analysis"
+          ]
+        },
+        {
+          "external_id": "study:ae2",
+          "name": "Khalifa University",
+          "name_ar": "جامعة خليفة",
+          "city": "Abu Dhabi",
+          "tuition": "AED 50,000 - 80,000 / Year",
+          "programs": [
+            "Aerospace & Defense Engineering",
+            "Biomedical Engineering & Devices Innovation",
+            "Cybersecurity & Computer Networks",
+            "Executive Master of Business Administration (EMBA)",
+            "Chemical & Environmental Engineering"
+          ]
+        },
+        {
+          "external_id": "study:ae3",
+          "name": "American University of Sharjah",
+          "name_ar": "الجامعة الأمريكية في الشارقة",
+          "city": "Sharjah",
+          "tuition": "AED 60,000 - 95,000 / Year",
+          "programs": [
+            "Architecture and Urban Planning",
+            "Electrical & Electronic Engineering",
+            "Finance, Banking and Asset Valuation",
+            "Civil Engineering & Infrastructure Management",
+            "Master of Science in Business Management"
+          ]
+        }
+      ]
+    },
+    {
+      "key": "romania",
+      "name": {
+        "ar": "رومانيا",
+        "en": "Romania"
+      },
+      "visa": {
+        "type": "تأشيرة دراسة رومانية طويلة المدى (D/SD Type)",
+        "application_form": "https://evisa.mae.ro/",
+        "requirements": [
+          "ورقة أو خطاب الموافقة والقبول الدراسي الصادر رسمياً من وزارة التعليم الرومانية (Acceptance Letter)",
+          "سداد رسوم العام الدراسي الأول المقررة للجامعة بالكامل وتقديم إيصال التحويل البنكي الأصيل",
+          "إثبات الكفاءة المالية الشهرية (ما لا يقل عن الحد الأدنى لراتب رومانيا) طوال فترة الإقامة بالبنك",
+          "شهادة فحص طبي أصيل وشهادة سوابق عدلية (فيش خالي سوابق) مترجمة ومصدقة أصولاً",
+          "تأمين طبي دولي للسفر سارٍ ومغطى بالكامل في رومانيا بقيمة تأمينية لا تقل عن 30,000 يورو",
+          "موافقة الأهل وتفويض الوصاية المصدق في حال كان الطالب عمره يقل عن 18 عاماً"
+        ],
+        "embassies": [
+          {
+            "name": "سفارة رومانيا – أبوظبي",
+            "phone": "+971 2 635 3217",
+            "email": "abudhabi@mae.ro",
+            "address": "مجمع الخالدية، فيلا رومانيا – شارع 22 متفرع من شارع الكورنيش، أبوظبي، الإمارات"
+          }
+        ]
+      },
+      "living_cost": {
+        "shared_room_or_flat": "150 - 300 EUR / شهر",
+        "university_hostel": "80 - 150 EUR / شهر",
+        "food_groceries": "150 - 250 EUR / شهر",
+        "economic_restaurant_meal": "6 - 12 EUR",
+        "student_transportation_pass": "10 - 20 EUR",
+        "bills_internet_phone": "20 - 40 EUR / شهر"
+      },
+      "universities": [
+        {
+          "external_id": "study:ro1",
+          "name": "University of Bucharest",
+          "name_ar": "جامعة بوخارست",
+          "city": "Bucharest",
+          "tuition": "€2,200 - €4,500 / Year",
+          "programs": [
+            "Applied Computer Science & Algorithms",
+            "Bachelor of Business Administration (BBA)",
+            "English and American Studies Program",
+            "Biochemistry and Molecular Biology",
+            "Software Engineering & Web Technologies"
+          ]
+        },
+        {
+          "external_id": "study:ro2",
+          "name": "Babeș-Bolyai University",
+          "name_ar": "جامعة بابيش-بولياي",
+          "city": "Cluj-Napoca",
+          "tuition": "€2,000 - €4,000 / Year",
+          "programs": [
+            "Global Business & Marketing Studies",
+            "Informatics & Artificial Intelligence (AI)",
+            "Advanced Theoretical Physics",
+            "Clinical Psychology and Cognitive Science",
+            "International Relations and Security Studies"
+          ]
+        },
+        {
+          "external_id": "study:ro3",
+          "name": "Polytechnic University of Bucharest",
+          "name_ar": "جامعة الـ بوليتكنيك في بوخارست",
+          "city": "Bucharest",
+          "tuition": "€2,500 - €5,000 / Year",
+          "programs": [
+            "Aerospace Engineering & Navigation",
+            "Automatic Control & Industrial Software Management",
+            "Telecommunications Networks and Systems",
+            "Mechanical Engineering & Advanced Fluid Dynamics",
+            "Renewables and Clean Energy Systems Engineering"
+          ]
+        }
+      ]
+    }
+  ],
+  "featured_universities": [
+    {
+      "external_id": "featured:alabama",
+      "country_key": "usa",
+      "name": "The University of Alabama",
+      "name_ar": "جامعة ألاباما",
+      "city": "الولايات المتحدة",
+      "tagline": "شهادة أمريكية معتمدة دولياً بمسار دراسي مرن",
+      "description": "تتيح لك جامعة ألاباما الحصول على شهادة أمريكية معتمدة دولياً، مع إمكانية الدراسة أونلاين أو داخل الولايات المتحدة من خلال المسار الأمريكي 1+3، في تخصصات مطلوبة مثل إدارة الأعمال وعلوم الحاسب والأمن السيبراني.",
+      "highlights": [
+        "شهادة معتمدة دولياً",
+        "أونلاين أو في الولايات المتحدة",
+        "1+3 المسار الأمريكي"
+      ],
+      "tags": [
+        "جامعة",
+        "تعليم عالي",
+        "المسار الأمريكي 1+3",
+        "أونلاين"
+      ],
+      "programs": [
+        "إدارة الأعمال - Business Administration",
+        "علوم الحاسب - Computer Science",
+        "الأمن السيبراني - Cybersecurity"
+      ]
+    },
+    {
+      "external_id": "featured:de-montfort-dubai",
+      "country_key": "uae",
+      "name": "De Montfort University Dubai",
+      "name_ar": "جامعة دي مونتفورت",
+      "city": "دبي",
+      "tagline": "دراسة بريطانية مرنة بالاعتماد على المشاريع",
+      "description": "تقدم جامعة دي مونتفورت في دبي برامج بنظام الدوام المرن، يعتمد التقييم فيها على المشاريع فقط، وتمتد السنة الدراسية لفترة قصيرة (تقريباً 3 أشهر) في تخصصات إدارة الأعمال والأمن السيبراني والمالية.",
+      "highlights": [
+        "بالاعتماد على المشاريع فقط",
+        "دوام مرن",
+        "سنة دراسية (تقريباً 3 أشهر)"
+      ],
+      "tags": [
+        "جامعة",
+        "تعليم عالي",
+        "دوام مرن",
+        "الإمارات"
+      ],
+      "programs": [
+        "إدارة الأعمال - Business Management",
+        "الأمن السيبراني - Cyber Security",
+        "المالية - Finance"
+      ]
+    },
+    {
+      "external_id": "featured:ue-dubai",
+      "country_key": "uae",
+      "name": "University of Europe for Applied Sciences – Dubai",
+      "name_ar": "الجامعة الأوروبية للعلوم التطبيقية",
+      "city": "في دبي",
+      "tagline": "ماجستير معتمد محلياً ودولياً خلال 9–12 شهر",
+      "description": "تقدم الجامعة الأوروبية للعلوم التطبيقية في دبي برامج معتمدة محلياً ودولياً بنظام دوام مرن، تشمل ماجستير إدارة الأعمال MBA وبرامج إدارة وقيادة الأعمال، ويمكن إنهاؤها خلال 9–12 شهراً.",
+      "highlights": [
+        "معتمدة محلياً ودولياً",
+        "دوام مرن",
+        "9–12 شهر"
+      ],
+      "tags": [
+        "جامعة",
+        "تعليم عالي",
+        "MBA",
+        "الإمارات"
+      ],
+      "programs": [
+        "ماجستير إدارة الأعمال - MBA",
+        "برامج إدارة وقيادة الأعمال"
+      ]
+    }
+  ],
+  "advisors": [
+    {
+      "key": "entisar",
+      "name": {
+        "ar": "انتصار جعفر",
+        "en": "Entisar Jafar"
+      },
+      "title": {
+        "ar": "مسؤولة الاستشاريين الأكاديميين",
+        "en": "Head of Academic Consultants"
+      },
+      "description": {
+        "ar": "خبرة تزيد عن 4 سنوات في التوجيه والقبول في جامعات الولايات المتحدة الأمريكية",
+        "en": "Over 4 years of experience in guidance and admission to United States universities."
+      },
+      "whatsapp": "971589690014"
+    },
+    {
+      "key": "noor",
+      "name": {
+        "ar": "نور الدنيا",
+        "en": "Noor Al Dunya"
+      },
+      "title": {
+        "ar": "مسؤولة في شروط التقديم على انسب المنح الجامعية",
+        "en": "Scholarship Requirements Coordinator"
+      },
+      "description": {
+        "ar": "خبرة سنتين في المنح الدراسية في جامعات المكسيك وافريقيا",
+        "en": "2 years of experience in scholarships at universities in Mexico and Africa."
+      },
+      "whatsapp": "971558660487"
+    },
+    {
+      "key": "manal",
+      "name": {
+        "ar": "منال الدنيا",
+        "en": "Manal Al Dunya"
+      },
+      "title": {
+        "ar": "خبيرة في المساعدات الأكاديمية",
+        "en": "Academic Support & Assistance Expert"
+      },
+      "description": {
+        "ar": "خبرة سنتين في المساعدات الأكاديمية وقبولات المنح الدراسية في أوروبا",
+        "en": "2 years of experience in academic support and scholarship admissions in Europe."
+      },
+      "whatsapp": "971554035529"
+    }
+  ],
+  "pages": [
+    {
+      "key": "service:1",
+      "section": "services",
+      "title": {
+        "ar": "استشارات بالبرامج والجامعات",
+        "en": "Programs & Universities Advising"
+      },
+      "content": {
+        "ar": "نساعد الطالب خطوة بخطوة في استعراض والتعرف على البرامج الأكاديمية واختيار التخصص الجامعي الأنسب والجامعات المعتمدة التي تلبي طموحاته الأكاديمية وميزانيته.",
+        "en": "We assist students scale options step-by-step, evaluating programs and Selecting accredited top-tier universities which match high academic goals and budgets."
+      }
+    },
+    {
+      "key": "service:2",
+      "section": "services",
+      "title": {
+        "ar": "مساعدة في الحصول على التأشيرات",
+        "en": "Student Visa Assistance"
+      },
+      "content": {
+        "ar": "فريق الخبراء لدينا يرشدك ويدعمك ويوفر لك دليلاً متكاملاً لتجهيز ملف الفيزا الدراسية بنجاح ومستندات السفارة لتسهيل الحصول على التأشيرة دون تأخير.",
+        "en": "Our expert advisors walk you through complete financial and general checklists, drafting winning academic visa applications to ease official embassy routing."
+      }
+    },
+    {
+      "key": "service:3",
+      "section": "services",
+      "title": {
+        "ar": "دعم ومساعدة بالاساينمت (Assignments)",
+        "en": "Assignments & Projects Tutoring"
+      },
+      "content": {
+        "ar": "مراجعة علمية، وتوجيه، وتحليل لتقارير المواد والواجبات والمشروعات الجامعية عبر أساتذة متخصصين لرفع كفاءتك الأكاديمية وتحقيق معايير الجودة المطلوبة.",
+        "en": "Technical tutoring review and structure optimization for homework, semester reports, and university-level projects led by specialists to upgrade performance."
+      }
+    },
+    {
+      "key": "service:4",
+      "section": "services",
+      "title": {
+        "ar": "دعم ومساعدة بالامتحانات",
+        "en": "Intensive Exam Coaching"
+      },
+      "content": {
+        "ar": "حصص مراجعة مكثفة مصممة خصيصاً للتجهيز لاختبارات منتصف ونهاية الفصول، مع حل الأسئلة المماثلة ونماذج الامتحانات السابقة لضمان فهم فائق وتفوقك الدراسي.",
+        "en": "Targeted revision classes configured built-to-order for midterms or finals, practicing past exams to guarantee deep academic confidence and outstanding grades."
+      }
+    },
+    {
+      "key": "service:5",
+      "section": "services",
+      "title": {
+        "ar": "الاستشارات والتوجيه الأكاديمي",
+        "en": "Academic Mentorship"
+      },
+      "content": {
+        "ar": "جلسات نقاشية تفصيلية لشرح الخطط الدراسية، وحل مشاكل المواد المتعثرة ومساعدتك في رسم مسار علمي وعملي ناجح يتفق مع طموحات الطالب وسوق العمل المعاصر.",
+        "en": "One-on-one sessions to map study timelines, clarify tough syllabus tracks, and support career alignment with contemporary high-growth job sectors."
+      }
+    },
+    {
+      "key": "faq:1",
+      "section": "faq",
+      "title": {
+        "ar": "ما هي تكلفة استشارتي الأولى في مكتب GEDU؟",
+        "en": "What is the fee for the initial study consultation at GEDU?"
+      },
+      "content": {
+        "ar": "الاستشارة الأكاديمية الأولى مجانية 100٪! نجلس معك ومع ذويك لنبحث الخيارات المتاحة، والبلدان الملائمة، وتكلفتها التقريبية دون أي التزام مسبق.",
+        "en": "Your first academic consultation is 100% free! We sit down with you and your family to present ideal countries, estimated expenses, and criteria sheets without obligation."
+      }
+    },
+    {
+      "key": "faq:2",
+      "section": "faq",
+      "title": {
+        "ar": "هل أحتاج إلى شهادة IELTS أو TOEFL للقبول؟",
+        "en": "Do I always need an IELTS or TOEFL certificate to get admitted?"
+      },
+      "content": {
+        "ar": "ليس دائماً! تتوفر العديد من الجامعات في إسبانيا وأجزاء من كندا ببرامج تتيح تقديم سنة تحضيرية للغة، أو تقبل إثباتًا لدراستك السابقة باللغة الإنجليزية في المدرسة.",
+        "en": "Not necessarily! Many universities offer optional intensive language prep semesters, or accept certification proving your final school/high-school years were taught in English."
+      }
+    },
+    {
+      "key": "faq:3",
+      "section": "faq",
+      "title": {
+        "ar": "كم تستغرق إجراءات القبول الدراسي والتأشيرة؟",
+        "en": "How long do student university admission & visa procedures take?"
+      },
+      "content": {
+        "ar": "القبول المبدئي يستغرق ما بين 3 أيام إلى أسبوعين حسب الجامعة والدولة. أما معاملة التأشيرة فتستغرق غالباً ما بين 3 إلى 8 أسابيع عمل لدى السفارات المعنية.",
+        "en": "Preliminary acceptance takes about 3 days to 2 weeks. Embassy study visa routing typically requires between 3 to 8 business weeks depending on specific consulate traffic."
+      }
+    },
+    {
+      "key": "faq:4",
+      "section": "faq",
+      "title": {
+        "ar": "هل تدعمون تقديم طلبات المنح الكاملة أو الجزئية؟",
+        "en": "Do you support applications for full or partial scholarships?"
+      },
+      "content": {
+        "ar": "نعم، نوضح للطلاب الجامعات التي توفر منحاً جزئية أو خصومات على الرسوم الدراسية بحسب التميز الأكاديمي والشهادات الحاصلين عليها، لمساعدتهم في تقليل التكاليف.",
+        "en": "Yes, we point out universities that offer partial scholarships or early-bird discounts calculated on high school GPAs and excellence portfolios to lower overall fees."
+      }
+    },
+    {
+      "key": "faq:5",
+      "section": "faq",
+      "title": {
+        "ar": "ما هي الضمانات المالية التي تطلبها السفارات؟",
+        "en": "What financial proof do embassies expect?"
+      },
+      "content": {
+        "ar": "تطلب السفارات إثبات القدرة المالية للمعيشة (تتراوح ما بين 600€ إلى 1200$ شهرياً حسب الدولة) من خلال كشف حساب كفيل رسمي (مثل الأب أو الأم) ساري المفعول لآخر 3 أو 6 أشهر.",
+        "en": "Consular bodies expect proof of living costs (ranging between €600 and $1200 monthly depending on country) verified via a legal sponsor bank record (e.g. father/mother) active for the last 3 to 6 months."
+      }
+    },
+    {
+      "key": "how-it-works",
+      "section": "how_it_works",
+      "title": {
+        "ar": "خطوات الدراسة مع GEDULink",
+        "en": "How studying with GEDULink works"
+      },
+      "content": {
+        "ar": "1. استكشف البرامج والوجهات المتاحة: تصفح الجامعات المعتمدة والبرامج المتاحة في الإمارات، المكسيك، كندا، أمريكا، رومانيا، وجنوب أفريقيا عبر محرك البحث الأكاديمي.\n2. تقديم طلب التسجيل السريع: املأ نموذج التقديم الإلكتروني السريع أو حمل صوراً من مؤهلاتك الدراسية الحالية لمراجعة الملف ومطابقة المتطلبات.\n3. تقييم المستندات واستشارة الفيزا: يقوم مستشار أكاديمي معتمد بمراجعة ملفك المالي وإرشادات كشف الحساب وتجهيز وثائق الكفالة للحصول على فيزا طالب خالية من الأخطاء.\n4. الحصول على القبول الجامعي المعتمد: احصل على خطاب قبول رسمي معتمد وموثق رقمياً من الجامعة الشريكة مع كشوفات الأقساط الحقيقية لبدء دراستك فوراً.\n5. بدء الدراسة أو ترتيبات السفر: ابدأ دراستك أونلاين بالكامل 100% من مكانك دون عناء السفر، أو أكمل ترتيبات الحجز والطيران للسفر واستلام السكن الجامعي والبدء أونسايت.",
+        "en": "1. Explore Programs & Destinations: Browse accredited universities across Spain, UAE, Mexico, Canada, South Africa, and USA using our academic filter hub.\n2. Submit Application or Documents: Submit our simple online 'Apply Now' ledger or upload initial high school or degree certificates for counselor review.\n3. Document Evaluation & Visa Check: Our direct consultants analyze bank statement guidelines, embassy file conditions, and academic transcripts in detail.\n4. Secure Official Direct Admission: Secure valid digital offer letters with direct tuition lists. Check whether to start 100% online or ready onsite.\n5. Commence Study or Travel: Log in with fully online student guides with no absolute travel, or schedule flights to relocate safely to your host campus."
+      }
+    },
+    {
+      "key": "contact",
+      "section": "contact",
+      "title": {
+        "ar": "معلومات التواصل",
+        "en": "Contact information"
+      },
+      "content": {
+        "ar": "فرع دبي – مكتب الاستشارات: دبي، أبراج بحيرات جميرا (JLT)، برج المتاجر العالي، الطابق 19 — هاتف: +971 4 455 8700 / +971 55 115 1364 — بريد: dubai@gedu.ae\nواتساب: +971 58 969 0014 / +971 55 866 0487 / +971 55 403 5529\nالاستشارة الأولى مجانية.",
+        "en": "Dubai Office - Student Hub: Dubai, Jumeirah Lake Towers (JLT), 19th floor — Phone: +971 4 455 8700 / +971 55 115 1364 — Email: dubai@gedu.ae\nWhatsApp: +971 58 969 0014 / +971 55 866 0487 / +971 55 403 5529\nThe first consultation is free."
+      }
+    },
+    {
+      "key": "partners",
+      "section": "partners",
+      "title": {
+        "ar": "الجامعات الشريكة",
+        "en": "Partner universities"
+      },
+      "content": {
+        "ar": "الجامعة الأوروبية للعلوم التطبيقية – دبي، جامعة دي مونتفورت دبي، جامعة ألاباما، جامعة بوتوماك، جامعة بوترا ماليزيا، جامعة تايلورز",
+        "en": null
+      }
+    },
+    {
+      "key": "site:hero",
+      "section": "hero",
+      "title": {
+        "ar": "نص صفحة الموقع: hero",
+        "en": "Website text: hero"
+      },
+      "content": {
+        "ar": "منصتنا بتساعد الطلاب في العثور على البرامج الدراسية والجامعات المناسبة بناءً على اهتماماتهم وأهدافهم وميزانيتهم، مع توفير دعم وإرشاد في كل خطوة من خطوات التقديم.\nمن خلال أدوات ذكية وفريق من الخبراء، نساعدك تختار بشكل صحيح وتزود فرص قبولك في الجامعة المناسبة ليك، بدون تعقيد أو إضاعة وقت.",
+        "en": "Our platform helps students discover academic institutions and programs based on their qualifications, interests, and budget, with professional guidance through every step of enrollment.\nWith personalized matching tools and advisor expertise, we ensure you make the best choice and maximize admission acceptance rates without wasting time."
+      }
+    },
+    {
+      "key": "site:dest",
+      "section": "dest",
+      "title": {
+        "ar": "نص صفحة الموقع: dest",
+        "en": "Website text: dest"
+      },
+      "content": {
+        "ar": "نوفر لك فرص قبول مباشرة وميسرة في نخبة من أفضل الجامعات في هذه الدول المعتمدة",
+        "en": "We secure direct and smooth admission offers in leading accredited universities across these major global destinations"
+      }
+    },
+    {
+      "key": "site:unis",
+      "section": "unis",
+      "title": {
+        "ar": "نص صفحة الموقع: unis",
+        "en": "Website text: unis"
+      },
+      "content": {
+        "ar": "تصفح الجامعات المعتمدة وتعرف على الرسوم والموقع لتحديد خيارك الأنسب",
+        "en": "Browse accredited universities, check tuition fees, locations, and request direct coordinator help"
+      }
+    },
+    {
+      "key": "site:services",
+      "section": "services",
+      "title": {
+        "ar": "نص صفحة الموقع: services",
+        "en": "Website text: services"
+      },
+      "content": {
+        "ar": "بصفتنا الشريك الأكاديمي لمستقبلك، نرافقك خطوة بخطوة من خلال تقديم أفضل الاستشارات التعليمية للبرامج والجامعات، وتسهيلات التأشيرة، مع دعم دراسي متكامل للاساينمت والتجهيز للامتحانات.\nتضمن قبولاً مباشراً سريعاً وبدون تعقيدات.\nمتابعة مستمرة للاسمنتات، الواجبات وتحضير الاختبارات.\nبخبرة مستشارينا في مراجعة وتجهيز الملفات المالية.",
+        "en": "As your academic partner, we walk with you hand-in-hand. Offering elite university advisory, simplified visa support, and fully comprehensive assignment/exam support to guarantee student success.\nGuarantees rapid direct admission offers without waitlists.\nConstant assistance for assignments, projects, and exam tutoring.\nWith our advisors' expertise in auditing bank records and documents."
+      }
+    },
+    {
+      "key": "site:faq",
+      "section": "faq",
+      "title": {
+        "ar": "نص صفحة الموقع: faq",
+        "en": "Website text: faq"
+      },
+      "content": {
+        "ar": "إليك إجابات لأبرز الاستفسارات المتكررة من طلابنا وأولياء الأمور",
+        "en": "Answers to common concerns from our prospective international students and parents"
+      }
+    },
+    {
+      "key": "site:support",
+      "section": "support",
+      "title": {
+        "ar": "نص صفحة الموقع: support",
+        "en": "Website text: support"
+      },
+      "content": {
+        "ar": "برنامج التفوق والنجاح الأكاديمي المباشر\nالدعم الأكاديمي والتفوق الدراسي الشامل\nنفخر بتقديم خدمات تعليمية احترافية مخصصة للطلاب لمساعدتهم في اجتياز الصعوبات الأكاديمية، عبر نخبة من الخبراء والأساتذة لتأمين درجات الامتياز.\nشرح مبسط ومطور للمناهج الجامعية والمواد الصعبة (الهندسية، الطبية، الحاسوب، والرياضيات) مع متابعة خطوة بخطوة لشرح الثغرات المعرفية.\nتحليل دقيق لمتمتطلبات الواجبات والمشروعات الجامعية، وتقديم الدعم الإرشادي المناسب والمراجع الكافية لضمان تحقيق أعلى معايير الجودة (No Plagiarism).\nالتزام تام بالصياغة الأكاديمية والسرية\nمعسكرات مراجعة امتحانات منتصف ونهاية الفصل وتجهيز ملخصات ذكية، مع شرح أفكار محاكاة لأسئلة الاختبارات لتقليل رهبة الامتحان وحل التدريبات الصعبة.\nمقاربة مباشرة تضمن لك علامات ممتازة\nاملأ البيانات لنقوم بتحويل طلبك فوراً للقسم المختص ويتصل بك المعلم المشرف",
+        "en": "Direct Academic Success & Support Program\nAcademic Support & Comprehensive Exam Prep\nWe take pride in offering premium personalized academic tutoring, homework guidance, and exam prep sessions with elite educators to secure your top rankings.\nSimplified step-by-step review of standard curricula and hard courses (Engineering, Medical, Tech, Calculations) mapping knowledge gaps.\nDetailed reviews of university assignment requirements, providing solid reference bibliography to guarantee high marks and 100% plagiarism-free reports.\nComplete Intellectual Integrity & Privacy\nInteractive midterms and finals review camps, draft cheatsheets, and practice questions simulating official exams to build structural confidence.\nFocused methodologies ensuring high ratings\nPlease fill in your request for immediate coordinator routing. Our academic mentor will contact you."
+      }
+    },
+    {
+      "key": "site:success",
+      "section": "success",
+      "title": {
+        "ar": "نص صفحة الموقع: success",
+        "en": "Website text: success"
+      },
+      "content": {
+        "ar": "شكراً لتواصلك. قمنا فوراً بتوجيه تفاصيل المادة ونوع المطلوب للأساتذة والمعلمين المختصين. سنتواصل معك لتنسيق موعد الدرس أو شرح المطلوب في أقرب وقت.",
+        "en": "Thank you for reaching out! We have dispatched your requirements directly to our head instructors. A bilingual advisor will connect with you shortly."
+      }
+    },
+    {
+      "key": "site:benefit",
+      "section": "benefit",
+      "title": {
+        "ar": "نص صفحة الموقع: benefit",
+        "en": "Website text: benefit"
+      },
+      "content": {
+        "ar": "جميع مقدمي خدمات الدعم الدراسي لدينا يحملون درجات دراسات عليا (ماجستير ودكتوراه) مع مهارة فائقة في تمكين الطلاب.\nدعم متواصل على مدار اليوم لمساعدتك وقت الأزمات أو فترات تسليم الاسايمنتات وضغط الامتحانات.\nنضمن أصالة التقارير وإثراء الطالب تعليمياً وفهم المحتوى العلمي بدقة متناهية لا تشوبها شائبة.",
+        "en": "All our private tutors hold PhD or Masters degrees with advanced pedagogy and proven grading success.\nFast-response assistance for last-minute cramming sessions, homework deliveries, and strict deadlines.\nWe guarantee comprehensive student enrichment, original concepts, and authentic learning outcomes."
+      }
+    },
+    {
+      "key": "site:contact",
+      "section": "contact",
+      "title": {
+        "ar": "نص صفحة الموقع: contact",
+        "en": "Website text: contact"
+      },
+      "content": {
+        "ar": "فريق خدمات GEDU جاهز للإجابة على جميع استفسارات الدراسة والتأشيرات والدعم الدراسي على مدار خط الهاتف والواتساب المباشر\nتواصل مباشرة لنساعدك في تعيين وجهتك المستقبلية أو حجز حصص مراجعة\nاكتب تفاصيل استفسارك أو موضوع الصعوبة الدراسية *\nمثال: أريد التقديم على برنامج الماجستير في إدارة الأعمال بإسبانيا وأحتاج لمعرفة التكاليف ومساعدة بالفيزا...\nنشكر تواصلك معنا. سنقوم بمراجعة حالتك وعروض الدول والبرامج المناسبة لك، وسنقوم بالاتصال بك هاتفياً وبشكل رسمي عبر الواتساب خلال ساعة واحدة عمل.",
+        "en": "The GEDU services squad is online 24/7 to provide swift support for study destinations, legal visas, and student exams.\nSubmit your basic information to book custom review courses or determine university files.\nYour message, question, or support requirements *\ne.g., I want to enroll in an English MBA in Spain and require scholarship context and helper details...\nThank you for reaching out! Our academic head will review your details and contact you via phone or official WhatsApp within one business hour."
+      }
+    },
+    {
+      "key": "site:office",
+      "section": "office",
+      "title": {
+        "ar": "نص صفحة الموقع: office",
+        "en": "Website text: office"
+      },
+      "content": {
+        "ar": "الفرع الإداري للتنسيق والاستشارات الأكاديمية والطلبات الدراسية.\nيومياً من الساعة 9:00 صباحاً وحتى 9:00 مساءً (ما عدا يوم الأحد).",
+        "en": "Admissions center for global corporate study files and tutoring coordinator boards.\nEveryday 9:00 AM - 9:00 PM (Except Sundays)."
+      }
+    },
+    {
+      "key": "site:programs",
+      "section": "programs",
+      "title": {
+        "ar": "نص صفحة الموقع: programs",
+        "en": "Website text: programs"
+      },
+      "content": {
+        "ar": "اعثر على البرنامج الأكاديمي الدولي الذي يلبي رغباتك وتطلعاتك المهنية والمعيشية",
+        "en": "Find globally certified programs matching your aspirations, career targets, and living standards"
+      }
+    },
+    {
+      "key": "site:about",
+      "section": "about",
+      "title": {
+        "ar": "نص صفحة الموقع: about",
+        "en": "Website text: about"
+      },
+      "content": {
+        "ar": "بوابتك الموثوقة للتفوق الأكاديمي والدراسة في أرفع الجامعات العالمية\nمؤسسة GEDU الدراسة في الخارج هي بوابتك الموثوقة لتحقيق حلمك الأكاديمي الدولي. نحن نقدم أفضل الاستشارات الجامعية المتكاملة والحلول المخصصة لمسيرتك التعليمية في مختلف دول العالم.\nشريك معتمد لأكثر من 30 جامعة حول العالم لضمان وصولك المباشر والآمن.\nتسهيل عملية القبول الدراسي وتامين دعم الواجبات والامتحانات والفيزا دون أي معوقات.\nنرافقك في كل خطوة من التقديم والقبول حتى بدء الدراسة والتخرج، مع مستشار مخصص للرد على استفساراتك.",
+        "en": "Your trusted portal for academic excellence and elite global university placements\nGEDU International Student Advisory is your verified gateway to global higher education. We provide custom academic pathing, direct enrollments, and premium learning/exam support to build your lifelong professional success.\nAffiliated partner to 30+ international campuses to secure direct admissions.\nSimplifying university entrance files, visa protocols, and private subject coaching.\nWe stay with you at every step, from application and admission to starting your studies and graduating, with a dedicated advisor."
+      }
+    },
+    {
+      "key": "site:gedu",
+      "section": "gedu",
+      "title": {
+        "ar": "نص صفحة الموقع: gedu",
+        "en": "Website text: gedu"
+      },
+      "content": {
+        "ar": "مكتب GEDU للاستشارات والخدمات الأكاديمية والتفوق الدراسي",
+        "en": "GEDU Global Academic Placements & Academic Tutoring Services"
+      }
+    },
+    {
+      "key": "site:team",
+      "section": "team",
+      "title": {
+        "ar": "نص صفحة الموقع: team",
+        "en": "Website text: team"
+      },
+      "content": {
+        "ar": "تواصل مباشرة مع نخبة من الخبراء الأكاديميين والمستشارين المعتمدين لمساعدتك في بناء قصة نجاح دراسية دولية متكاملة.",
+        "en": "Connect directly with elite academic experts and certified consultants to help you construct an integrated international study success story."
+      }
+    },
+    {
+      "key": "site:partners",
+      "section": "partners",
+      "title": {
+        "ar": "نص صفحة الموقع: partners",
+        "en": "Website text: partners"
+      },
+      "content": {
+        "ar": "نتعاون مع كبرى الشركات الأكاديمية والمنظمات التعليمية لتوفير فرص قبول استثنائية.",
+        "en": "We collaborate with leading academic corporations and educational bodies to secure exceptional placement opportunities."
+      }
+    },
+    {
+      "key": "site:hybrid",
+      "section": "hybrid",
+      "title": {
+        "ar": "نص صفحة الموقع: hybrid",
+        "en": "Website text: hybrid"
+      },
+      "content": {
+        "ar": "سفر ودراسة في الخارج (أونلاين & أونسايت بفيزا)",
+        "en": "Travel & Study Abroad (Onsite and Online with Student Visa Support)"
+      }
+    },
+    {
+      "key": "site:visa",
+      "section": "visa",
+      "title": {
+        "ar": "نص صفحة الموقع: visa",
+        "en": "Website text: visa"
+      },
+      "content": {
+        "ar": "🛂 متطلبات تأشيرة الدراسة والسفر\nهذه الجامعة تدعم خيارين: الدراسة أونلاين الكاملة أو السفر والدراسة أونسايت داخل الحرم الجامعي عبر تأشيرة الفئات الطلابية المعتمدة والتسهيلات المتاحة.",
+        "en": "🛂 Student Visa & Relocation Requirements\nThis institution supports twin pathways: Complete Remote Study or Physical Student Relocation with our tailored legal visa support guides."
+      }
+    },
+    {
+      "key": "site:online",
+      "section": "online",
+      "title": {
+        "ar": "نص صفحة الموقع: online",
+        "en": "Website text: online"
+      },
+      "content": {
+        "ar": "هذا البرنامج الأكاديمي مقدّم بنظام الدراسة عن بُعد بالكامل (100% أونلاين) مع فصول دراسية تفاعلية وبث حي، ولا يتطلب أي سفر أو زيارة سفارات أو تقديم على تأشيرة طلابية، ممّا يوفر عنك عناء المتابعات الورقية ومطابقة القيود الجغرافية.\nلماذا تختار الدراسة أونلاين مع GEDU STUDY؟\nلن تحتاج لزيارة أي سفارات أو تقديم كشوفات حساب بنكية تعجيزية أو حجز مواعيد تقديم البصمات.\nمحاضرات مسجلة ومباشرة تسهل عليك التوفيق بين دراستك وعملك، ومتابعة المحتوى الأكاديمي من راحتك.\nيضمن لك توفير 100% من نفقات المعيشة في الخارج، السكن الطلابي، فواتير الخدمات وتذاكر الطيران السنوية.\nالشهادة الجامعية الصادرة مطابقة تماماً لتلك التي يحصل عليها طلاب الحرم الجامعي أونسايت، دون ذكر 'عن بعد' في بعض الأنظمة.\nمستشارونا الأكاديميون جاهزون لمساعدتك في استكمال ملف تسجيلك المباشر في بضع دقائق.",
+        "en": "This program represents a 100% live-interactive remote learning experience. Zero embassy runs, zero financial verification deposits required, and absolute geographical flexibility.\nWhy Study Fully Online with GEDU?\nNo bank deposit barriers, embassy queues or scheduling hurdles.\nLive & recorded lectures built for standard flexibility. Blend working with higher learning flawlessly.\nSave 100% on foreign rent, flights, meal logs, commuting tickets, and utility fees.\nIdentical transcripts to on-campus students without specifying distance learning indicators.\nOur academic advisors are online to assist in wrapping up your enrollment folder in a few minutes."
+      }
+    }
+  ]
+}

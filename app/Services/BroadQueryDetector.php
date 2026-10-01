@@ -86,8 +86,14 @@ class BroadQueryDetector
 
             foreach ($unis as $uni) {
                 $text .= "- University: {$uni->name}";
+                if ($uni->name_ar) {
+                    $text .= " / {$uni->name_ar}";
+                }
                 if ($uni->city) {
                     $text .= " (City: {$uni->city})";
+                }
+                if ($uni->tuition) {
+                    $text .= " — Tuition: {$uni->tuition}";
                 }
                 $text .= "\n";
 

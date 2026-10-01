@@ -3,8 +3,13 @@
 namespace App\Services;
 
 use GuzzleHttp\Client;
+use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Exception\RequestException;
+use GuzzleHttp\HandlerStack;
+use GuzzleHttp\Middleware;
 use Illuminate\Support\Facades\Log;
+use Psr\Http\Message\RequestInterface;
+use Psr\Http\Message\ResponseInterface;
 
 /**
  * EmbeddingService
@@ -52,7 +57,32 @@ class EmbeddingService
         $this->openRouterApiKey = (string) config('services.openrouter.api_key', '');
         $this->openRouterModel  = config('services.openrouter.embedding_model', 'openai/text-embedding-3-small');
 
-        $this->client = new Client(['timeout' => 60, 'connect_timeout' => 15]);
+        $this->client = new Client([
+            'timeout'         => 60,
+            'connect_timeout' => 15,
+            'handler'         => $this->retryingHandler(),
+        ]);
+    }
+
+    /**
+     * Fail fast with a readable message when the active provider has no API key,
+     * instead of a cryptic 403 from the provider.
+     *
+     * @throws \RuntimeException
+     */
+    public function assertConfigured(): void
+    {
+        [$key, $envVar] = match ($this->provider) {
+            'openai'     => [$this->openAiApiKey, 'OPENAI_API_KEY'],
+            'openrouter' => [$this->openRouterApiKey, 'OPENROUTER_API_KEY'],
+            default      => [$this->geminiApiKey, 'GEMINI_API_KEY'],
+        };
+
+        if (trim($key) === '') {
+            throw new \RuntimeException(
+                "Embedding provider '{$this->provider}' has no API key. Set {$envVar} in .env, then run: php artisan config:clear"
+            );
+        }
     }
 
     // ─── Public API ────────────────────────────────────────────────────────────
@@ -242,6 +272,38 @@ class EmbeddingService
     }
 
     // ─── Helpers ───────────────────────────────────────────────────────────────
+
+    /**
+     * Retry transient failures (DNS/connection errors, 429, 5xx) up to 3 times
+     * with exponential backoff: 1s, 2s, 4s.
+     */
+    private function retryingHandler(): HandlerStack
+    {
+        $stack = HandlerStack::create();
+
+        $stack->push(Middleware::retry(
+            function (int $retries, RequestInterface $request, ?ResponseInterface $response = null, ?\Throwable $e = null): bool {
+                if ($retries >= 3) {
+                    return false;
+                }
+
+                $transient = $e instanceof ConnectException
+                    || ($response && ($response->getStatusCode() === 429 || $response->getStatusCode() >= 500));
+
+                if ($transient) {
+                    Log::warning('[Embedding] Transient error, retrying', [
+                        'attempt' => $retries + 1,
+                        'error'   => $e?->getMessage() ?? 'HTTP ' . $response->getStatusCode(),
+                    ]);
+                }
+
+                return $transient;
+            },
+            fn (int $retries) => 1000 * (2 ** ($retries - 1))
+        ));
+
+        return $stack;
+    }
 
     /**
      * Clean and truncate text before embedding.

@@ -16,11 +16,15 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => [
-        env('FRONTEND_URL', 'http://localhost:3000'),
-        'http://localhost:3000',
-        'http://localhost:4173',   // Vite preview
-    ],
+    // FRONTEND_URL may hold several comma-separated origins, e.g.
+    // FRONTEND_URL=https://gedulink.com,https://www.gedulink.com
+    'allowed_origins' => array_values(array_unique(array_filter(array_merge(
+        array_map('trim', explode(',', (string) env('FRONTEND_URL', ''))),
+        [
+            'http://localhost:3000',
+            'http://localhost:4173',   // Vite preview
+        ],
+    )))),
 
     'allowed_origins_patterns' => [],
 

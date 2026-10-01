@@ -31,6 +31,7 @@ class SupportMember extends Model
     protected $table = 'support_members';
 
     protected $fillable = [
+        'external_id',
         'name',
         'name_ar',
         'department',

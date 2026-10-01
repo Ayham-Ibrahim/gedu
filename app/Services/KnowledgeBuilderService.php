@@ -5,6 +5,7 @@ namespace App\Services;
 use App\Models\University;
 use App\Models\Program;
 use App\Models\Course;
+use App\Models\SitePage;
 use App\Models\SupportMember;
 use Illuminate\Support\Facades\Log;
 
@@ -45,6 +46,18 @@ class KnowledgeBuilderService
     {
         Log::info('[Knowledge] Starting full rebuild...');
 
+        // Preflight: prove the embedding provider works BEFORE dropping the
+        // collection, so a bad key or network outage doesn't wipe live data.
+        $this->embedder->assertConfigured();
+        $probe = $this->embedder->embed('preflight check');
+        if (count($probe) !== $this->embedder->getDimension()) {
+            throw new \RuntimeException(sprintf(
+                'Embedding model returned %d dimensions but %d were expected. Check the embedding model in .env.',
+                count($probe),
+                $this->embedder->getDimension()
+            ));
+        }
+
         // Ensure collection exists with correct dimensions
         $this->qdrant->recreateCollection($this->embedder->getDimension());
 
@@ -53,6 +66,7 @@ class KnowledgeBuilderService
             'programs'       => 0,
             'courses'        => 0,
             'support_members'=> 0,
+            'site_pages'     => 0,
             'errors'         => 0,
         ];
 
@@ -61,6 +75,7 @@ class KnowledgeBuilderService
         $stats['programs']        = $this->indexPrograms();
         $stats['courses']         = $this->indexCourses();
         $stats['support_members'] = $this->indexSupportTeam();
+        $stats['site_pages']      = $this->indexSitePages();
 
         Log::info('[Knowledge] Full rebuild complete.', $stats);
         return $stats;
@@ -226,6 +241,27 @@ class KnowledgeBuilderService
         return $count;
     }
 
+    private function indexSitePages(): int
+    {
+        $count = 0;
+        SitePage::where('is_active', true)->chunk(50, function ($pages) use (&$count) {
+            $chunks  = $pages->map(fn($p) => $this->buildSitePageChunk($p))->toArray();
+            $texts   = array_column($chunks, 'text');
+            $vectors = $this->embedder->embedBatch($texts);
+
+            $points = array_map(fn($chunk, $vector) => [
+                'id'      => $chunk['id'],
+                'vector'  => $vector,
+                'payload' => $chunk['payload'],
+            ], $chunks, $vectors);
+
+            $this->qdrant->upsertPoints($points);
+            $count += count($points);
+        });
+        Log::info("[Knowledge] Indexed {$count} site pages.");
+        return $count;
+    }
+
     // ─── Chunk Builders ────────────────────────────────────────────────────────
     // Each builder returns: ['id' => int, 'text' => string, 'payload' => array]
 
@@ -239,6 +275,7 @@ class KnowledgeBuilderService
             $university->name_ar ? "University (Arabic): {$university->name_ar}" : null,
             "Country: {$university->country}",
             $university->city ? "City: {$university->city}" : null,
+            $university->tuition ? "Tuition: {$university->tuition}" : null,
             $university->website ? "Website: {$university->website}" : null,
             $university->description ? "About: {$university->description}" : null,
             $programNames ? "Available Programs: {$programNames}" : null,
@@ -354,6 +391,30 @@ class KnowledgeBuilderService
         ];
     }
 
+    private function buildSitePageChunk(SitePage $page): array
+    {
+        $text = implode("\n", array_filter([
+            "GEDULink website — {$page->section}",
+            $page->title_en ? "Title: {$page->title_en}" : null,
+            $page->title_ar ? "العنوان: {$page->title_ar}" : null,
+            $page->content_en,
+            $page->content_ar,
+        ]));
+
+        return [
+            'id'      => $this->chunkId('page', $page->id),
+            'text'    => $text,
+            'payload' => [
+                'source_type' => 'site_page',
+                'source_id'   => $page->id,
+                'text'        => $text,
+                'key'         => $page->key,
+                'section'     => $page->section,
+                'updated_at'  => $page->updated_at?->toISOString(),
+            ],
+        ];
+    }
+
     // ─── ID Helper ─────────────────────────────────────────────────────────────
 
     /**
@@ -365,6 +426,7 @@ class KnowledgeBuilderService
      *   program_1    → 2_000_001
      *   course_1     → 3_000_001
      *   support_1    → 4_000_001
+ *   page_1       → 5_000_001
      */
     private function chunkId(string $type, int $recordId): int
     {
@@ -373,6 +435,7 @@ class KnowledgeBuilderService
             'program'    => 2,
             'course'     => 3,
             'support'    => 4,
+            'page'       => 5,
             default      => 9,
         };
         return ($namespace * 1_000_000) + $recordId;

@@ -47,6 +47,7 @@ class KnowledgeBuildCommand extends Command
                     ['Programs',       $stats['programs']],
                     ['Courses',        $stats['courses']],
                     ['Support Team',   $stats['support_members']],
+                    ['Website Pages',  $stats['site_pages']],
                 ]
             );
 
@@ -59,7 +60,12 @@ class KnowledgeBuildCommand extends Command
 
         } catch (\Throwable $e) {
             $this->error('❌ Build failed: ' . $e->getMessage());
-            $this->error($e->getTraceAsString());
+
+            if ($this->output->isVerbose()) {
+                $this->error($e->getTraceAsString());
+            } else {
+                $this->line('Run with -v for the full stack trace.');
+            }
             return Command::FAILURE;
         }
     }
