@@ -26,7 +26,12 @@ return [
         ],
     )))),
 
-    'allowed_origins_patterns' => [],
+    // Local development only: any port on localhost / 127.0.0.1 (Vite uses
+    // 5173 by default, the Express dev server 3000, etc.). Production is
+    // restricted to the exact FRONTEND_URL origins above.
+    'allowed_origins_patterns' => env('APP_ENV') === 'local'
+        ? ['#^https?://(localhost|127\.0\.0\.1)(:\d+)?$#']
+        : [],
 
     'allowed_headers' => ['*'],
 
