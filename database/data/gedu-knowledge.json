@@ -1,86 +1,64 @@
 {
   "schema": 1,
   "source": "gedu-frontend",
-  "generated_at": "2026-10-01T11:22:21.547Z",
+  "generated_at": "2026-10-03T10:27:09.293Z",
   "countries": [
     {
-      "key": "egypt",
+      "key": "uae",
       "name": {
-        "ar": "مصر",
-        "en": "Egypt"
+        "ar": "الإمارات العربية المتحدة",
+        "en": "United Arab Emirates"
       },
-      "visa": {
-        "type": "تأشيرة دراسة لجمهورية مصر العربية",
-        "application_form": "https://mfa.gov.eg/",
-        "requirements": [
-          "القبول الجامعي الرسمي المعتمد من قبل وزارة التعليم العالي المصرية (إدارة الوافدين)",
-          "جواز سفر أصلي ساري المفعول لمدة لا تقل عن 6 أشهر متتالية",
-          "كشف حساب مالي أو إثبات الكفالة والمقدرة المالية لتغطية تكاليف الإقامة والمعيشة بمصر",
-          "شهادة الفحص الطبي المعتمدة للخلو من الأمراض المعدية الكبرى",
-          "صور مصدقة وموثقة من المؤهلات الأكاديمية والشهادات الدراسية السابقة",
-          "تعبئة استمارة طلب الحصول على الفيزا ودفع الرسوم المقررة بالسفارة"
-        ],
-        "embassies": [
-          {
-            "name": "سفارة جمهورية مصر العربية – أبوظبي",
-            "phone": "+971 2 444 5555",
-            "email": "embassy.abudhabi@mfa.gov.eg",
-            "address": "منطقة السفارات – شارع المرور – أبوظبي – الإمارات"
-          }
-        ]
-      },
-      "living_cost": {
-        "housing_shared_room": "150 - 300 $ / شهر",
-        "housing_student_residence": "100 - 250 $ / شهر",
-        "food_grocery_home_cooking": "100 - 200 $ / شهر",
-        "economic_restaurant_meal": "3 - 7 $",
-        "transport_monthly_pass": "15 - 30 $",
-        "bills_internet_phone": "20 - 45 $ / شهر"
-      },
+      "visa": {},
+      "living_cost": {},
       "universities": [
         {
-          "external_id": "study:eg1",
-          "name": "Cairo University",
-          "name_ar": "جامعة القاهرة",
-          "city": "Giza / Cairo",
-          "tuition": "$3,000 - $6,000 / Year",
+          "external_id": "partner:ue-dubai",
+          "name": "University of Europe for Applied Sciences – Dubai",
+          "name_ar": "الجامعة الأوروبية للعلوم التطبيقية",
+          "city": "في دبي",
+          "tuition": null,
+          "tagline": "ماجستير معتمد محلياً ودولياً خلال 9–12 شهر",
+          "description": "تقدم الجامعة الأوروبية للعلوم التطبيقية في دبي برامج معتمدة محلياً ودولياً بنظام دوام مرن، تشمل ماجستير إدارة الأعمال MBA وبرامج إدارة وقيادة الأعمال، ويمكن إنهاؤها خلال 9–12 شهراً.",
+          "highlights": [
+            "معتمدة محلياً ودولياً",
+            "دوام مرن",
+            "9–12 شهر"
+          ],
+          "tags": [
+            "جامعة",
+            "تعليم عالي",
+            "MBA",
+            "الإمارات"
+          ],
           "programs": [
-            "Computer Science & AI",
-            "Medicine & Surgery (MD)",
-            "Mechanical Engineering",
-            "Pharmacy & Clinical Pharmacy",
-            "Business Administration",
-            "Economics & Political Science"
+            "ماجستير إدارة الأعمال - MBA",
+            "برامج إدارة وقيادة الأعمال"
           ]
         },
         {
-          "external_id": "study:eg2",
-          "name": "The American University in Cairo",
-          "name_ar": "الجامعة الأمريكية بالقاهرة",
-          "city": "New Cairo",
-          "tuition": "$12,000 - $18,000 / Year",
+          "external_id": "partner:de-montfort-dubai",
+          "name": "De Montfort University Dubai",
+          "name_ar": "جامعة دي مونتفورت",
+          "city": "دبي",
+          "tuition": null,
+          "tagline": "دراسة بريطانية مرنة بالاعتماد على المشاريع",
+          "description": "تقدم جامعة دي مونتفورت في دبي برامج بنظام الدوام المرن، يعتمد التقييم فيها على المشاريع فقط، وتمتد السنة الدراسية لفترة قصيرة (تقريباً 3 أشهر) في تخصصات إدارة الأعمال والأمن السيبراني والمالية.",
+          "highlights": [
+            "بالاعتماد على المشاريع فقط",
+            "دوام مرن",
+            "سنة دراسية (تقريباً 3 أشهر)"
+          ],
+          "tags": [
+            "جامعة",
+            "تعليم عالي",
+            "دوام مرن",
+            "الإمارات"
+          ],
           "programs": [
-            "Global MBA",
-            "Computer Science",
-            "Graphic Design",
-            "Mechanical Engineering",
-            "Integrated Marketing Communications",
-            "Political Science & International Relations"
-          ]
-        },
-        {
-          "external_id": "study:eg3",
-          "name": "Ain Shams University",
-          "name_ar": "جامعة عين شمس",
-          "city": "Cairo",
-          "tuition": "$2,500 - $5,000 / Year",
-          "programs": [
-            "Civil & Infrastructure Engineering",
-            "Dentistry & Oral Health (DDS)",
-            "Information Systems & Data Science",
-            "Architectural Engineering",
-            "Software Engineering",
-            "Accounting & Finance"
+            "إدارة الأعمال - Business Management",
+            "الأمن السيبراني - Cyber Security",
+            "المالية - Finance"
           ]
         }
       ]
@@ -91,641 +69,85 @@
         "ar": "الولايات المتحدة الأمريكية",
         "en": "United States"
       },
-      "visa": {
-        "type": "تأشيرة طالب F-1 للولايات المتحدة",
-        "application_form": "https://ceac.state.gov/genniv/",
-        "requirements": [
-          "الحصول على نموذج I-20 الدراسي المعتمد والصادر رسمياً من الجامعة الشريكة",
-          "دفع رسوم نظام SEVIS بالكامل والحصول على إيصال دفع I-901 الصادر من دائرة الهجرة",
-          "تعبئة نموذج طلب تأشيرة غير المهاجرين DS-160 بالكامل وتأكيده أونلاين",
-          "تحديد موعد المقابلة الشخصية في السفارة في أبوظبي أو القنصلية في دبي",
-          "تقديم إثبات مالي قوي وموثق (كشف حساب كفيل أو تمويل شخصي أو منحة معتمدة)",
-          "تقديم إثبات بنية مغادرة الولايات المتحدة والروابط القوية التي تحفز العودة للوطن"
-        ],
-        "embassies": [
-          {
-            "name": "سفارة الولايات المتحدة الأمريكية – أبوظبي",
-            "phone": "+971 2 414 2200",
-            "email": "abudhabiacs@state.gov",
-            "address": "طريق المطار – منطقة السفارات – قطعة 38 – قطاع W59-02 – أبوظبي – الإمارات"
-          },
-          {
-            "name": "القنصلية العامة للولايات المتحدة الأمريكية – دبي",
-            "phone": "+971 4 309 4000",
-            "email": "DubaiACS@state.gov",
-            "address": "تقاطع شارع السيف وشارع الشيخ خليفة بن زايد – دبي – الإمارات"
-          }
-        ]
-      },
-      "living_cost": {
-        "university_dormitory": "800 - 1500 $ / شهر",
-        "shared_apartment": "700 - 1800 $ / شهر",
-        "food_groceries": "300 - 600 $ / شهر",
-        "economic_restaurant_meal": "12 - 22 $",
-        "transport_monthly_pass": "70 - 150 $",
-        "bills_internet_phone": "100 - 250 $ / شهر"
-      },
+      "visa": {},
+      "living_cost": {},
       "universities": [
         {
-          "external_id": "study:us1",
+          "external_id": "partner:alabama",
+          "name": "The University of Alabama",
+          "name_ar": "جامعة ألاباما",
+          "city": "الولايات المتحدة",
+          "tuition": null,
+          "tagline": "شهادة أمريكية معتمدة دولياً بمسار دراسي مرن",
+          "description": "تتيح لك جامعة ألاباما الحصول على شهادة أمريكية معتمدة دولياً، مع إمكانية الدراسة أونلاين أو داخل الولايات المتحدة من خلال المسار الأمريكي 1+3، في تخصصات مطلوبة مثل إدارة الأعمال وعلوم الحاسب والأمن السيبراني.",
+          "highlights": [
+            "شهادة معتمدة دولياً",
+            "أونلاين أو في الولايات المتحدة",
+            "1+3 المسار الأمريكي"
+          ],
+          "tags": [
+            "جامعة",
+            "تعليم عالي",
+            "المسار الأمريكي 1+3",
+            "أونلاين"
+          ],
+          "programs": [
+            "إدارة الأعمال - Business Administration",
+            "علوم الحاسب - Computer Science",
+            "الأمن السيبراني - Cybersecurity"
+          ]
+        },
+        {
+          "external_id": "partner:potomac-university",
           "name": "Potomac University",
           "name_ar": "جامعة بوتوماك",
-          "city": "Washington, D.C.",
-          "tuition": "$12,000 - $15,000 / Year",
-          "programs": [
-            "Bachelor of Science in Computer Science",
-            "Master of Business Administration (MBA)",
-            "Cybersecurity & Information Assurance",
-            "International Business Administration",
-            "Information Technology Management"
-          ]
-        },
-        {
-          "external_id": "study:us2",
-          "name": "University of West Alabama",
-          "name_ar": "جامعة ويست ألاباما",
-          "city": "Livingston, Alabama",
-          "tuition": "$10,000 - $14,000 / Year",
-          "programs": [
-            "Bachelor of Business Administration",
-            "Master of Science in Experimental Psychology",
-            "Integrated Marketing Communications",
-            "Biology and Environmental Sciences",
-            "Sport Management & Athletics"
-          ]
+          "city": null,
+          "tuition": null,
+          "tagline": null,
+          "description": null,
+          "highlights": [],
+          "tags": [],
+          "programs": []
         }
       ]
     },
     {
-      "key": "canada",
+      "key": "malaysia",
       "name": {
-        "ar": "كندا",
-        "en": "Canada"
+        "ar": "ماليزيا",
+        "en": "Malaysia"
       },
-      "visa": {
-        "type": "تصريح الدراسة الكندي (Study Permit)",
-        "application_form": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada.html",
-        "requirements": [
-          "خطاب القبول الجامعي الرسمي (Letter of Acceptance) من مؤسسة تعليمية كندية معتمدة (DLI)",
-          "إثبات المقدرة المالية الكافية لدفع الرسوم وتغطية معيشة الطالب عائلته إن وُجدت",
-          "شهادة خلو من السوابق الجنائية (فيش وتشبيه) مصدق ومترجم أصولاً",
-          "تجاوز الفحص الطبي المعتمد لدى أحد الأطباء المعتمدين من السفارة الكندية",
-          "تقديم خطاب توضيحي لهدف الدراسة (Statement of Purpose / Study Plan)",
-          "دفع رسوم معالجة التأشيرة والتقاط البصمات الحيوية (Biometrics)"
-        ],
-        "embassies": [
-          {
-            "name": "سفارة كندا – أبوظبي",
-            "phone": "+971 2 694 0300",
-            "address": "برج بينونة، شارع الكورنيش، أبوظبي، الإمارات العربية المتحدة"
-          }
-        ]
-      },
-      "living_cost": {
-        "shared_room_or_apartment": "600 - 1200 CAD / شهر",
-        "university_residence": "700 - 1500 CAD / شهر",
-        "food_and_groceries": "300 - 500 CAD / شهر",
-        "economic_restaurant_meal": "15 - 25 CAD",
-        "transport_monthly_pass": "80 - 130 CAD",
-        "bills_internet_phone": "90 - 180 CAD / شهر"
-      },
+      "visa": {},
+      "living_cost": {},
       "universities": [
         {
-          "external_id": "study:ca1",
-          "name": "University of Toronto",
-          "name_ar": "جامعة تورنتو",
-          "city": "Toronto, Ontario",
-          "tuition": "$35,000 - $55,000 / Year",
-          "programs": [
-            "Computer Science & Advanced Programming",
-            "Master of Business Administration (Rotman MBA)",
-            "Electrical & Computer Engineering",
-            "Biotechnology & Health Sciences",
-            "Data Science & Statistical Analysis"
-          ]
+          "external_id": "partner:universiti-putra-malaysia-upm-",
+          "name": "Universiti Putra Malaysia (UPM)",
+          "name_ar": "جامعة بوترا ماليزيا",
+          "city": null,
+          "tuition": null,
+          "tagline": null,
+          "description": null,
+          "highlights": [],
+          "tags": [],
+          "programs": []
         },
         {
-          "external_id": "study:ca2",
-          "name": "McGill University",
-          "name_ar": "جامعة ماكغيل",
-          "city": "Montreal, Quebec",
-          "tuition": "$30,000 - $48,000 / Year",
-          "programs": [
-            "Mechanical & Aerospace Engineering",
-            "Clinical Psychology & Neuroscience",
-            "Commerce & Global Finance",
-            "Software Engineering",
-            "Economics and Strategic Management"
-          ]
-        },
-        {
-          "external_id": "study:ca3",
-          "name": "University of British Columbia",
-          "name_ar": "جامعة كولومبيا البريطانية",
-          "city": "Vancouver, BC",
-          "tuition": "$32,000 - $45,000 / Year",
-          "programs": [
-            "Civil & Environmental Engineering",
-            "Environmental Sciences",
-            "Business Administration (Sauder BBA)",
-            "International Relations & Public Policy",
-            "Computer Science & Machine Learning"
-          ]
-        }
-      ]
-    },
-    {
-      "key": "mexico",
-      "name": {
-        "ar": "المكسيك",
-        "en": "Mexico"
-      },
-      "visa": {
-        "type": "تأشيرة طالب مكسيكية للإقامة المؤقتة",
-        "application_form": "https://embamex.sre.gob.mx/emiratos/",
-        "requirements": [
-          "خطاب القبول الجامعي الأصلي والموثق رسمياً الصادر عن جامعة أزتيكا",
-          "جواز سفر ساري المفعول لمدة لا تقل عن ستة أشهر مع صور ملونة",
-          "كشف حساب بنكي لآخر 3 أشهر يثبت الاستقرار والملاءة المالية الكافية للفرد أو الضامن",
-          "صورتين شخصيتين بيومتريتين حديثتين بخلفية بيضاء وبدون إكسسوارات",
-          "دفع رسوم معالجة ملف التأشيرة المقررة وتجاوز المقابلة الشخصية وجهاً لوجه بالسفارة"
-        ],
-        "embassies": [
-          {
-            "name": "سفارة المكسيك – أبوظبي",
-            "phone": "+971 2 511 9900",
-            "email": "consularemiau@sre.gob.mx",
-            "address": "منطقة السفارات، شارع الكرامة، فيلا رقم 38، أبوظبي، الإمارات"
-          }
-        ]
-      },
-      "living_cost": {
-        "housing_shared_apartment": "200 - 350 $ / شهر",
-        "housing_private_studio": "300 - 600 $ / شهر",
-        "food_groceries": "150 - 250 $ / شهر",
-        "economic_restaurant_meal": "5 - 10 $",
-        "transport_monthly_pass": "15 - 30 $",
-        "bills_internet_phone": "30 - 60 $ / شهر"
-      },
-      "universities": [
-        {
-          "external_id": "study:mx1",
-          "name": "Universidad Azteca",
-          "name_ar": "جامعة أزتيكا",
-          "city": "Chalco, State of Mexico",
-          "tuition": "$4,000 - $7,000 / Year",
-          "programs": [
-            "Bachelor of Business Administration (BBA)",
-            "Executive Master of Business Administration (EMBA)",
-            "Doctor of Business Administration (DBA)",
-            "Information Technology Management",
-            "International Law & Human Rights",
-            "Educational Sciences & Leadership"
-          ]
-        }
-      ]
-    },
-    {
-      "key": "south_africa",
-      "name": {
-        "ar": "جمهورية جنوب أفريقيا",
-        "en": "South Africa"
-      },
-      "visa": {
-        "type": "تأشيرة دراسة لجمهورية جنوب أفريقيا",
-        "application_form": "https://www.dha.gov.za/",
-        "requirements": [
-          "خطاب قبول رسمي صادر من المؤسسة الأكاديمية أو الجامعة المعتمدة بجنوب أفريقيا",
-          "تقرير طبي رسمي شامل وفحص إشعاعي للصدر للخلو التام من مرض السل الرئوي",
-          "إثبات الملاءة المالية لتغطية تكاليف الإقامة السنوية ورسوم الجامعة بكشوفات بنكية معتمدة",
-          "شهادة خلو سوابق عدلية (لا حكم عليه) من بلد الإقامة الرسمي لآخر 12 شهر",
-          "تأمين طبي دولي معتمد يغطي كامل الإقامة في جنوب أفريقيا للرعاية العاجلة والطارئة",
-          "حجز طائرة مؤكد لرحلتي الذهاب والعودة أو تقديم ضمان نقدي كوديعة عودة"
-        ],
-        "embassies": [
-          {
-            "name": "سفارة جمهورية جنوب أفريقيا – أبوظبي",
-            "phone": "+971 2 417 6400",
-            "email": "consular.abudhabi@dirco.gov.za",
-            "address": "شارع بينونة، منطقة البطين، ص.ب 29447، أبوظبي، الإمارات"
-          }
-        ]
-      },
-      "living_cost": {
-        "housing_shared_apartment": "250 - 450 $ / شهر",
-        "university_residence": "200 - 400 $ / شهر",
-        "food_groceries": "150 - 300 $ / شهر",
-        "economic_restaurant_meal": "7 - 12 $",
-        "transport_monthly_pass": "30 - 60 $",
-        "bills_internet_phone": "40 - 80 $ / شهر"
-      },
-      "universities": [
-        {
-          "external_id": "study:za1",
-          "name": "Benin University",
-          "name_ar": "جامعة بينين - برنامج جنوب أفريقيا المعتمد",
-          "city": "Western Cape / Pretoria",
-          "tuition": "$2,000 - $4,500 / Year",
-          "programs": [
-            "Bachelor of Business Administration",
-            "Public Health & Epidemiology",
-            "Information Technology Services",
-            "Community Development Studies",
-            "Environmental Protection & Eco-Systems",
-            "Business Management & Leadership"
-          ]
-        }
-      ]
-    },
-    {
-      "key": "georgia",
-      "name": {
-        "ar": "جورجيا",
-        "en": "Georgia"
-      },
-      "visa": {
-        "type": "تأشيرة دراسة وطنية لجورجيا (D3 Visa)",
-        "application_form": "https://geoconsul.gov.ge/",
-        "requirements": [
-          "خطاب القبول الجامعي الرسمي مصدق من وزارة التربية والعلوم الجورجية ونظام التسجيل الوطني",
-          "جواز سفر ساري المفعول للفترة الأكاديمية كاملة مع صور ملونة عالية الجودة",
-          "كشف حساب بنكي رسمي معتمد يثبت المقدرة المالية والدعم الكافي للمعيشة بجورجيا",
-          "تأمين طبي شامل ضد الأمراض والحوادث سارٍ في جورجيا لكامل فترة الإقامة",
-          "ترجمة كافة الأوراق والمستندات الأكاديمية السابقة للغة الجورجية أو الإنجليزية بشكل معتمد مصدق"
-        ],
-        "embassies": [
-          {
-            "name": "سفارة جورجيا – أبوظبي",
-            "phone": "+971 2 644 6023",
-            "email": "abudhabi.emb@mfa.gov.ge",
-            "address": "شارع الفلاح، منطقة المرور، فيلا جورجيا، أبوظبي، الإمارات"
-          }
-        ]
-      },
-      "living_cost": {
-        "shared_flat": "200 - 400 $ / شهر",
-        "private_apartment": "350 - 700 $ / شهر",
-        "food_groceries": "100 - 200 $ / شهر",
-        "economic_restaurant_meal": "6 - 11 $",
-        "transport_monthly_pass": "10 - 20 $",
-        "bills_internet_phone": "25 - 50 $ / شهر"
-      },
-      "universities": [
-        {
-          "external_id": "study:ge1",
-          "name": "Tbilisi State Medical University",
-          "name_ar": "جامعة تبليسي الطبية الحكومية",
-          "city": "Tbilisi",
-          "tuition": "$5,000 - $8,000 / Year",
-          "programs": [
-            "Doctor of Medicine (MD) - Certified English Program",
-            "Doctor of Dental Medicine (DMD)",
-            "Bachelor of Pharmacy",
-            "Physical Medicine and Rehabilitation"
-          ]
-        },
-        {
-          "external_id": "study:ge2",
-          "name": "Caucasus University",
-          "name_ar": "جامعة القوقاز",
-          "city": "Tbilisi",
-          "tuition": "$4,000 - $6,500 / Year",
-          "programs": [
-            "Information Technology & Computer Science",
-            "Bachelor of Business Administration (BBA)",
-            "Cybersecurity & Networks Engineering",
-            "International Relations and Diplomacy",
-            "Tourism & Hospitality Management"
-          ]
-        },
-        {
-          "external_id": "study:ge3",
-          "name": "Georgian Technical University",
-          "name_ar": "الجامعة التقنية الجورجية",
-          "city": "Tbilisi",
-          "tuition": "$3,550 - $5,000 / Year",
-          "programs": [
-            "Civil Engineering & Infrastructure",
-            "Software Engineering",
-            "Architecture and Town Planning",
-            "Electrical Power Engineering",
-            "Industrial Automation & Control Systems"
-          ]
-        }
-      ]
-    },
-    {
-      "key": "china",
-      "name": {
-        "ar": "الصين",
-        "en": "China"
-      },
-      "visa": {
-        "type": "تأشيرة طالب صينية طويلة المدى (X1 Visa)",
-        "application_form": "http://ae.china-embassy.gov.cn/eng/",
-        "requirements": [
-          "استلام نموذج JW202 أو JW201 المخصص لتقديم طلبات تأشيرات دراسة الوافدين",
-          "خطاب القبول النهائي المصدق والصادر من جهة الجامعة الصينية المعتمدة",
-          "شهادة الفحص الطبي الصيني الشامل للوافدين (Foreigner Physical Examination Form)",
-          "كشف حساب مالي يدعم تغطية نفقات سنة دراسية وعام معيشي كامل على الأقل",
-          "جواز كاتب ساري المفعول والشهادات العلمية والعملية السابقة مصدقة ومترجمة"
-        ],
-        "embassies": [
-          {
-            "name": "سفارة جمهورية الصين الشعبية – أبوظبي",
-            "phone": "+971 2 443 4276",
-            "email": "chinaemb_ae@mfa.gov.cn",
-            "address": "شارع السعادة، منطقة السفارات، ص.ب 2741، أبوظبي، الإمارات"
-          }
-        ]
-      },
-      "living_cost": {
-        "shared_room": "150 - 300 $ / شهر",
-        "student_dormitory_on_campus": "100 - 250 $ / شهر",
-        "food_on_campus": "100 - 180 $ / شهر",
-        "economic_restaurant_meal": "3 - 7 $",
-        "subway_transportation_monthly": "15 - 35 $",
-        "bills_internet_phone": "15 - 30 $ / شهر"
-      },
-      "universities": [
-        {
-          "external_id": "study:cn1",
-          "name": "Tsinghua University",
-          "name_ar": "جامعة تسينغهوا",
-          "city": "Beijing",
-          "tuition": "$6,500 - $9,500 / Year",
-          "programs": [
-            "Global Business Administration",
-            "Advanced Computer Science",
-            "Engineering & Technology Management",
-            "Artificial Intelligence & Software Engineering",
-            "Structural & Civil Engineering"
-          ]
-        },
-        {
-          "external_id": "study:cn2",
-          "name": "Peking University",
-          "name_ar": "جامعة بكين",
-          "city": "Beijing",
-          "tuition": "$6,000 - $9,000 / Year",
-          "programs": [
-            "International Relations & Public Policy",
-            "Computer Science & Advanced Software Development",
-            "Global MBA (Guanghua MBA)",
-            "Chinese Language, History & Culture Studies",
-            "International Economics and Finance"
-          ]
-        },
-        {
-          "external_id": "study:cn3",
-          "name": "Fudan University",
-          "name_ar": "جامعة فودان",
-          "city": "Shanghai",
-          "tuition": "$5,500 - $8,200 / Year",
-          "programs": [
-            "International Finance & Economics",
-            "Data Science & Statistical Modeling",
-            "MBBS (Medical Studies in English)",
-            "Strategic Marketing & Management Science",
-            "Advanced Chemistry and Material Science"
-          ]
-        }
-      ]
-    },
-    {
-      "key": "uae",
-      "name": {
-        "ar": "الإمارات العربية المتحدة",
-        "en": "United Arab Emirates"
-      },
-      "visa": {
-        "type": "تأشيرة وإقامة طالب داخل دولة الإمارات",
-        "application_form": "https://smart.gdrfad.gov.ae/",
-        "requirements": [
-          "خطاب قبول نهائي غير مشروط وصادر من إحدى المؤسسات الجامعية المرخصة والمعتمدة بالدولة",
-          "جواز سفر للطالب ساري الصلاحية لمدة تجاوز 6 أشهر مع صور حديثة ومصدقة",
-          "خضوع الطالب لفحص اللياقة الطبية الشامل لدى أحد المراكز الصحية المعتمدة للياقة",
-          "تقديم نسخة من وثيقة أو كفالة بنكية صادرة من الجامعة أو الضامن المالي المعتمد",
-          "تأمين صحي شامل ومتكامل ساري المفعول في دولة الإمارات العربية المتحدة",
-          "تعبئة طلب إصدار سري للهوية الإمارتية وتنشيط ملف الإقامة للطالب رسمياً"
-        ],
-        "embassies": [
-          {
-            "name": "الهيئة الاتحادية للهوية والجنسية والجمارك وأمن المنافذ – أبوظبي",
-            "phone": "+971 2 403 0000",
-            "address": "شارع المرور – الهيئة الاتحادية لقنوات الخدمة، أبوظبي، الإمارات"
-          }
-        ]
-      },
-      "living_cost": {
-        "shared_apartment": "1500 - 3000 AED / شهر",
-        "student_hostel_dormitory": "1000 - 2500 AED / شهر",
-        "food_and_grocery": "800 - 1500 AED / شهر",
-        "economic_restaurant_meal": "25 - 45 AED",
-        "transport_monthly_pass_card": "150 - 300 AED",
-        "bills_internet_phone": "250 - 500 AED / شهر"
-      },
-      "universities": [
-        {
-          "external_id": "study:ae1",
-          "name": "United Arab Emirates University",
-          "name_ar": "جامعة الإمارات العربية المتحدة",
-          "city": "Al Ain",
-          "tuition": "AED 35,000 - 55,000 / Year",
-          "programs": [
-            "Mechanical Engineering & Robotic Automation",
-            "Computer Science & Systems Security",
-            "Doctor of Medicine & Health Sciences (MD)",
-            "Business Administration & Global Entrepreneurship",
-            "Accounting, Auditing & Financial Analysis"
-          ]
-        },
-        {
-          "external_id": "study:ae2",
-          "name": "Khalifa University",
-          "name_ar": "جامعة خليفة",
-          "city": "Abu Dhabi",
-          "tuition": "AED 50,000 - 80,000 / Year",
-          "programs": [
-            "Aerospace & Defense Engineering",
-            "Biomedical Engineering & Devices Innovation",
-            "Cybersecurity & Computer Networks",
-            "Executive Master of Business Administration (EMBA)",
-            "Chemical & Environmental Engineering"
-          ]
-        },
-        {
-          "external_id": "study:ae3",
-          "name": "American University of Sharjah",
-          "name_ar": "الجامعة الأمريكية في الشارقة",
-          "city": "Sharjah",
-          "tuition": "AED 60,000 - 95,000 / Year",
-          "programs": [
-            "Architecture and Urban Planning",
-            "Electrical & Electronic Engineering",
-            "Finance, Banking and Asset Valuation",
-            "Civil Engineering & Infrastructure Management",
-            "Master of Science in Business Management"
-          ]
-        }
-      ]
-    },
-    {
-      "key": "romania",
-      "name": {
-        "ar": "رومانيا",
-        "en": "Romania"
-      },
-      "visa": {
-        "type": "تأشيرة دراسة رومانية طويلة المدى (D/SD Type)",
-        "application_form": "https://evisa.mae.ro/",
-        "requirements": [
-          "ورقة أو خطاب الموافقة والقبول الدراسي الصادر رسمياً من وزارة التعليم الرومانية (Acceptance Letter)",
-          "سداد رسوم العام الدراسي الأول المقررة للجامعة بالكامل وتقديم إيصال التحويل البنكي الأصيل",
-          "إثبات الكفاءة المالية الشهرية (ما لا يقل عن الحد الأدنى لراتب رومانيا) طوال فترة الإقامة بالبنك",
-          "شهادة فحص طبي أصيل وشهادة سوابق عدلية (فيش خالي سوابق) مترجمة ومصدقة أصولاً",
-          "تأمين طبي دولي للسفر سارٍ ومغطى بالكامل في رومانيا بقيمة تأمينية لا تقل عن 30,000 يورو",
-          "موافقة الأهل وتفويض الوصاية المصدق في حال كان الطالب عمره يقل عن 18 عاماً"
-        ],
-        "embassies": [
-          {
-            "name": "سفارة رومانيا – أبوظبي",
-            "phone": "+971 2 635 3217",
-            "email": "abudhabi@mae.ro",
-            "address": "مجمع الخالدية، فيلا رومانيا – شارع 22 متفرع من شارع الكورنيش، أبوظبي، الإمارات"
-          }
-        ]
-      },
-      "living_cost": {
-        "shared_room_or_flat": "150 - 300 EUR / شهر",
-        "university_hostel": "80 - 150 EUR / شهر",
-        "food_groceries": "150 - 250 EUR / شهر",
-        "economic_restaurant_meal": "6 - 12 EUR",
-        "student_transportation_pass": "10 - 20 EUR",
-        "bills_internet_phone": "20 - 40 EUR / شهر"
-      },
-      "universities": [
-        {
-          "external_id": "study:ro1",
-          "name": "University of Bucharest",
-          "name_ar": "جامعة بوخارست",
-          "city": "Bucharest",
-          "tuition": "€2,200 - €4,500 / Year",
-          "programs": [
-            "Applied Computer Science & Algorithms",
-            "Bachelor of Business Administration (BBA)",
-            "English and American Studies Program",
-            "Biochemistry and Molecular Biology",
-            "Software Engineering & Web Technologies"
-          ]
-        },
-        {
-          "external_id": "study:ro2",
-          "name": "Babeș-Bolyai University",
-          "name_ar": "جامعة بابيش-بولياي",
-          "city": "Cluj-Napoca",
-          "tuition": "€2,000 - €4,000 / Year",
-          "programs": [
-            "Global Business & Marketing Studies",
-            "Informatics & Artificial Intelligence (AI)",
-            "Advanced Theoretical Physics",
-            "Clinical Psychology and Cognitive Science",
-            "International Relations and Security Studies"
-          ]
-        },
-        {
-          "external_id": "study:ro3",
-          "name": "Polytechnic University of Bucharest",
-          "name_ar": "جامعة الـ بوليتكنيك في بوخارست",
-          "city": "Bucharest",
-          "tuition": "€2,500 - €5,000 / Year",
-          "programs": [
-            "Aerospace Engineering & Navigation",
-            "Automatic Control & Industrial Software Management",
-            "Telecommunications Networks and Systems",
-            "Mechanical Engineering & Advanced Fluid Dynamics",
-            "Renewables and Clean Energy Systems Engineering"
-          ]
+          "external_id": "partner:taylor-s-university",
+          "name": "Taylor's University",
+          "name_ar": "جامعة تايلورز",
+          "city": null,
+          "tuition": null,
+          "tagline": null,
+          "description": null,
+          "highlights": [],
+          "tags": [],
+          "programs": []
         }
       ]
     }
   ],
-  "featured_universities": [
-    {
-      "external_id": "featured:alabama",
-      "country_key": "usa",
-      "name": "The University of Alabama",
-      "name_ar": "جامعة ألاباما",
-      "city": "الولايات المتحدة",
-      "tagline": "شهادة أمريكية معتمدة دولياً بمسار دراسي مرن",
-      "description": "تتيح لك جامعة ألاباما الحصول على شهادة أمريكية معتمدة دولياً، مع إمكانية الدراسة أونلاين أو داخل الولايات المتحدة من خلال المسار الأمريكي 1+3، في تخصصات مطلوبة مثل إدارة الأعمال وعلوم الحاسب والأمن السيبراني.",
-      "highlights": [
-        "شهادة معتمدة دولياً",
-        "أونلاين أو في الولايات المتحدة",
-        "1+3 المسار الأمريكي"
-      ],
-      "tags": [
-        "جامعة",
-        "تعليم عالي",
-        "المسار الأمريكي 1+3",
-        "أونلاين"
-      ],
-      "programs": [
-        "إدارة الأعمال - Business Administration",
-        "علوم الحاسب - Computer Science",
-        "الأمن السيبراني - Cybersecurity"
-      ]
-    },
-    {
-      "external_id": "featured:de-montfort-dubai",
-      "country_key": "uae",
-      "name": "De Montfort University Dubai",
-      "name_ar": "جامعة دي مونتفورت",
-      "city": "دبي",
-      "tagline": "دراسة بريطانية مرنة بالاعتماد على المشاريع",
-      "description": "تقدم جامعة دي مونتفورت في دبي برامج بنظام الدوام المرن، يعتمد التقييم فيها على المشاريع فقط، وتمتد السنة الدراسية لفترة قصيرة (تقريباً 3 أشهر) في تخصصات إدارة الأعمال والأمن السيبراني والمالية.",
-      "highlights": [
-        "بالاعتماد على المشاريع فقط",
-        "دوام مرن",
-        "سنة دراسية (تقريباً 3 أشهر)"
-      ],
-      "tags": [
-        "جامعة",
-        "تعليم عالي",
-        "دوام مرن",
-        "الإمارات"
-      ],
-      "programs": [
-        "إدارة الأعمال - Business Management",
-        "الأمن السيبراني - Cyber Security",
-        "المالية - Finance"
-      ]
-    },
-    {
-      "external_id": "featured:ue-dubai",
-      "country_key": "uae",
-      "name": "University of Europe for Applied Sciences – Dubai",
-      "name_ar": "الجامعة الأوروبية للعلوم التطبيقية",
-      "city": "في دبي",
-      "tagline": "ماجستير معتمد محلياً ودولياً خلال 9–12 شهر",
-      "description": "تقدم الجامعة الأوروبية للعلوم التطبيقية في دبي برامج معتمدة محلياً ودولياً بنظام دوام مرن، تشمل ماجستير إدارة الأعمال MBA وبرامج إدارة وقيادة الأعمال، ويمكن إنهاؤها خلال 9–12 شهراً.",
-      "highlights": [
-        "معتمدة محلياً ودولياً",
-        "دوام مرن",
-        "9–12 شهر"
-      ],
-      "tags": [
-        "جامعة",
-        "تعليم عالي",
-        "MBA",
-        "الإمارات"
-      ],
-      "programs": [
-        "ماجستير إدارة الأعمال - MBA",
-        "برامج إدارة وقيادة الأعمال"
-      ]
-    }
-  ],
+  "featured_universities": [],
   "advisors": [
     {
       "key": "entisar",

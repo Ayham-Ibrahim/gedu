@@ -45,15 +45,17 @@ class WebsiteKnowledgeImporter
 
         foreach ($data['countries'] as $country) {
             foreach ($country['universities'] as $u) {
+                $isOnline = collect($u['tags'] ?? [])->contains(fn ($t) => str_contains($t, 'أونلاين'));
+
                 $university = $this->upsertUniversity($u['external_id'], [
                     'name'        => $u['name'],
                     'name_ar'     => $u['name_ar'] ?? null,
                     'country'     => $this->countryLabel($country),
                     'city'        => $u['city'] ?? null,
                     'tuition'     => $u['tuition'] ?? null,
-                    'description' => null,
+                    'description' => $this->universityDescription($u),
                 ]);
-                $stats['programs'] += $this->replacePrograms($university, $u['programs'] ?? [], $u['tuition'] ?? null, 'Onsite');
+                $stats['programs'] += $this->replacePrograms($university, $u['programs'] ?? [], $u['tuition'] ?? null, $isOnline ? 'Hybrid' : 'Onsite');
                 $keepUniversities[] = $u['external_id'];
                 $stats['universities']++;
             }
@@ -69,13 +71,7 @@ class WebsiteKnowledgeImporter
                 'country'     => $country ? $this->countryLabel($country) : $u['country_key'],
                 'city'        => $u['city'] ?? null,
                 'tuition'     => null,
-                'description' => implode("\n", array_filter([
-                    'Featured GEDULink partner university.',
-                    $u['tagline'] ?? null,
-                    $u['description'] ?? null,
-                    ! empty($u['highlights']) ? 'Highlights: ' . implode('، ', $u['highlights']) : null,
-                    ! empty($u['tags']) ? 'Tags: ' . implode('، ', $u['tags']) : null,
-                ])),
+                'description' => $this->universityDescription($u),
             ]);
             $stats['programs'] += $this->replacePrograms($university, $u['programs'] ?? [], null, $isOnline ? 'Hybrid' : 'Onsite');
             $keepUniversities[] = $u['external_id'];
@@ -119,6 +115,10 @@ class WebsiteKnowledgeImporter
             $stats['pages']++;
         }
         foreach ($data['countries'] as $country) {
+            // Only countries whose export carries visa / living-cost details get a page.
+            if (empty($country['visa']) && empty($country['living_cost'])) {
+                continue;
+            }
             $key = "country:{$country['key']}";
             $this->upsertPage($key, 'country', [
                 'ar' => "الدراسة في {$country['name']['ar']}: التأشيرة وتكاليف المعيشة",
@@ -186,6 +186,19 @@ class WebsiteKnowledgeImporter
             'content_en' => $content['en'] ?? null,
             'is_active'  => true,
         ]);
+    }
+
+    private function universityDescription(array $u): ?string
+    {
+        $text = implode("\n", array_filter([
+            'GEDULink partner university (listed on the website).',
+            $u['tagline'] ?? null,
+            $u['description'] ?? null,
+            ! empty($u['highlights']) ? 'Highlights: ' . implode('، ', $u['highlights']) : null,
+            ! empty($u['tags']) ? 'Tags: ' . implode('، ', $u['tags']) : null,
+        ]));
+
+        return $text !== '' ? $text : null;
     }
 
     private function countryLabel(array $country): string

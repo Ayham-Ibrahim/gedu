@@ -106,6 +106,11 @@ class ChatController extends Controller
                     'count'  => count($contextChunks),
                     'scores' => array_column($contextChunks, '_score'),
                 ]);
+
+                // Always include the (small) directory of universities we offer,
+                // so the model can tell when a university/country is NOT offered
+                // instead of trusting stray mentions in general website text.
+                $contextChunks = array_merge($this->broadQuery->buildFullContext(), $contextChunks);
             }
 
             // ── 4. Generate answer with OpenRouter ──────────────────────────────
